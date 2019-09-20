@@ -6,17 +6,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.}Kūrimo procesas}{3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.}Projekto siūlymas}{4}% 
+\contentsline {subsection}{\numberline {1.1.}Projekto siūlymas}{3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.}Technologinio sprendimo paieška ir įgyvendinimas}{4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3.}Reikalavimų ciklas}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.3.1.}Reikalavimų sudarymas}{4}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.3.2.}Susitikimai su klientu, funcionalumo tikslinimas}{4}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.}Sistemos maketas}{4}% 
+\contentsline {subsection}{\numberline {1.4.}Sistemos modeliavimas}{4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.5.}Sistemos projektavimas}{4}% 
 \defcounter {refsection}{0}\relax 
@@ -30,6 +26,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.10.}Palaikymas}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.11.}Balius}{4}% 
+\contentsline {subsection}{\numberline {1.11.}Balius/Post-mortem}{4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Rezultatai ir išvados}{5}% 
