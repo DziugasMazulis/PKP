@@ -65,7 +65,32 @@
 	\subsection{Reikalavimų ciklas}
 		Nutarus dėl konkrečių technologijų, kurios bus naudojamos pradedame funkcinių ir nefunkcinių reikalavimų sudarymas. Jų sudarymas vyksta cikliškai, pirma mūsų įmonės verslo analitikas išanalizuoja verslo poreikius ir kartu su architektu sudaro pirminius reikalavimus, jie yra pristatomi klientui kartu su klausimais, įvyksta suformuotų reikalavimų aptarimas. Aptarime dalyvauja architektas, verslo analistas ir verslo žmogus. Jeigu klientas sutinka su sudarytais reikalavimais pradedamas sistemos modeliavimas, jeigu kyla neaiškumų dėl reikalavimų tarp kliento ir mūsų įmonės grįštama prie poreikių sudarimo įmonės viduje. Ciklas vyksta iki tol kol pasiekiamas sutarimas tarp mūsų įmonės ir kliento.
 	\subsection{Sistemos modeliavimas}
-	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{img/SistemosModeliavimas}
+	\caption{Sistemos modeliavimas} % Antraštė įterpiama po paveikslėlio
+	\label{img:mlp}
+	\end{figure}
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{img/NN}
+	\caption{N2 modelio pavyzdys} % Antraštė įterpiama po paveikslėlio
+	\label{img:mlp}
+	\end{figure}
+
+
+
+		Modeliavimas bus vykdomas Ad-hock principu, pasitelkiant praeities žinias arba tiesiog susėdus ekspertams ir bandant išsiaiškinti prindimą.
+		Programų kūrimo proceso modeliavimą sudaro keturios dalys:
+		\begin{enumerate}
+			\item{Funkcinis modeliavimas - šiam modeliavimo žingsniui naudosime N2 lentelę(N2 Chart). Šioje diagramoje apibrėžiame funkcinias ir fizinias sąsajas tarp sistemos elementų }
+			\item{Sistemos architektūra - šiame žingsnyje apibrėšime kaip sąveiką tarp skirtingų sistemos komponentų(duomenų bazių, servisų ir kitą) bei išorinių sistemų. Šiam modeliavimui bus pasitelkta UML komponentų diagramos.}
+			\item{Verslo proceso modeliavimas - šiam modeliavimui bus naudojamos BPMN grafifai apibrėžentys verslo procesus. Sukurti procesai bus analizuojami, gerinami. Bus išskirtos verslo proceso dalys kurias galima automatizuoti.}
+			\item{Įmonės modeliavimas - abstrakčiai sumodeliuojama kaip įmonės procesai įtakos tolimesnį programos vystymą. 
+				Kokie procesų modeliai bus reikalingi sukurti pseudo kodui. Iš procesų modelių ir duomenų modelių kyla reikalavimai. }
+
+		\end{enumerate}
 	\subsection{Sistemos projektavimas}
 	\subsection{Sistemos prototipavimas}
 	\subsection{Sistemos kūrimas}
