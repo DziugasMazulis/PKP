@@ -18,7 +18,7 @@
 \faculty{Matematikos ir informatikos fakultetas}
 \department{Programų sistemų katedra}
 \papertype{Programų kūrimo proceso laboratorinis darbas}
-\title{Įmonės ,,Mėnuliukai technologies" programų kūrimo proceso aprašas (Pirmas laboratorinis darbas)}
+\title{Įmonės ,,Mėnuliukų technologijos" programų kūrimo proceso aprašas (Pirmas laboratorinis darbas)}
 \titleineng{Description of the development process of the ,,Moon technologies" company (First laboratory work)}
 \status{4 kurso 3 grupės studentai}
 \author{Matas Savickis, Justas Tvarijonas, Džiugas Mažulis}
@@ -92,6 +92,38 @@
 
 		\end{enumerate}
 	\subsection{Sistemos projektavimas}
+	Projektuojant sistema siekiama patenkinti arba siekti išvardintas harakteristikas:
+	\begin{itemize}
+		\item{
+			Intersuotų asmenų įvairovė - sistema turis patenkinti įvairių interesuotų asmenų norus ir poreikius, pavyzdžiui vadovai, savininkai, vartotojai ir valdytojai.
+			%Kiekvienas interesuotas asmuo turi savo asmeninius interesuosus, kuriuos nori įvykdyti naudodamasis asmeninius interesuosus, kuriuos nori įvykdyti naudodamasis sistemą.
+			%"Mėnuliukų technologijos" kompanijoje atidžiai ir glaustai bendraujama su interesuotais asmenimis tam kad tiksliai ir akivaizdžiai išsaiškinti interesuotais.
+		}
+		\item{Interesų atskyrimas - bandoma atskirti interesai taip, kad lengviau būtų realizuoti galutinėje sistemoje.  }
+		\item{Remiamasi kokybės užtikrinimu - Bandoma taip pat siekti nefunkcinių reikalavimų užtikrinimu pavyzdžiui užtikrinti greitaveiką.}
+	\end{itemize}
+	% https://microservices.io
+	\subsubsection{Mikroservisai}
+	"Mėnuliukai technologijos" bando atskirti bendrą sistemą į daug mažesnių sistemų remdamasi dabartine populiaria mikroservisu architektūra.
+	Kiekviena atskirta sistema turi būti kuo savarankiškesnė ir atlikti būtent vieną funkcionalumą, tačiau jį turės atlikti kuo efektyviau.
+	Mikroservisai turi itin aiškiai apibrėžtas programų sąsajas bei dokumentaciją, kuri akivaizdžiai apibrėžia funkcionalumą.
+	Taip užtikrinama, jog programų sistemos tikslingai atlieka reikalaujamus verslo siekius.
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/micro.png}
+	\caption{Mikroservisų architektūra}
+	\label{img:mlp}
+	\end{figure}
+	Mikroservisų architektūros teikiami privalumai:
+	\begin{itemize}
+		\item{atskiros sistemos dalys yra lengviau prižiūrimos ir lengviau testuojamos}
+		\item{silpna sistemos sąsajo - neglaudus sąryšis tarp komponentų bei programų leidžia daryti pakeitimus, kurie nepropaguoja per visą sistemą}
+		\item{nepriklausomas servisų dalis galima atskirai diegti bei atlikti atnaujinimus nediegiant visos sistemos iš naujo}
+		\item{Maži teamai prižiūri efektyviau sistemos, reikia mažiau komunikacijos}
+		\item{Servisai kuriami pagal įmonės gebėjimus}
+	\end{itemize}
+
 	\subsection{Sistemos prototipavimas}
 	Prototipavimo fazės rezultatas yra pirminė produkto versija, kuri jau detalesnė nei eskizai ar maketai. Prototipo fazėje dar galimaatrasti potencialias problemas ir, kadangi prototipas yra dar tik supaprastinta sistema, yra galimybė pakeisti produkto kūrimo kryptį be didelių nuostolių. Pavyzdžiui, pagal dizainą sukuriamas paprastas svetainės karkasas su kuriuo naudotojas gali sąveikauti: spausti mygtukus, įvesti duomenis į laukus. Jei sukurtas prototipas sėkmingas, investuojamas laikas ir pinigai į tolesnį produkto įgyvendinimą laikant prototipą jo pagrindu.
 	\subsection{Sistemos įgyvendinimas}
