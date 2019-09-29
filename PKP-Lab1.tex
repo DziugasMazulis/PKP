@@ -38,7 +38,7 @@
 \tableofcontents
 
 \sectionnonum{Įvadas}
-	Šiame darbe bus pristatyta ,,Mėnuliukai technologies" programų kūrimo procesas.
+	Šiame darbe bus pristatytas ,,Mėnuliukų technologijų" programų kūrimo procesas.
 	Pats procesas yra paremtas Agile metodologija su minimaliais pakeitimais reikalavimų rinkime.
 	Kūrimo procesas yra labiau pritaikytas dirbti su projektais, kurių pradžioje reikalinga surinkti daugiau informacijos ir tūrėti aiškesnį kryptį, kas bus toliau. Procesas gali vykti dviem būdais:
 	\begin{itemize}
@@ -55,15 +55,15 @@
 	\centering
 	\includegraphics[scale=0.7]{img/SoftwareProcessMoonTechnologies}
 	\caption{Sistemos kūrimo procesas} % Antraštė įterpiama po paveikslėlio
-	\label{img:mlp}
+	\label{img:kurimoProcesas}
 	\end{figure}
 
 	\subsection{Projekto siūlymas}
 		Tai yra pradinė projekto fazė, kurioje yra užmezgamas dialogas su klientų. Per viešuosius pirkimus arba pačiam klientui susisiekus su įmone prasideda abstrakti sistemos analizė ir pasiūlymo sudarymas. Abstrakčioje sistemos analizėje įvertinami pagrindiniai kliento poreikiai, buvusių projektų patirtis, projekto kompleksiškumas ir dabartinė įmonės būsena. Įvertinama ar įmonė turi visus reikiamus specialistus atlikti darbui, kiek žmonių jau yra įmonėje, kiek reiktų pasisamdyti arba kokius dabus perduoti sub-kontraktoriams.
 	\subsection{Technologinio sprendimo paieška ir įgyvendinimas}
-		Pasirašius sutartį su klientu pradedama ieškoti konkretaus technologinio sprendimo tinkako projekto vystimui. Sutatomos konrečios karkasų, duomenų bazių arba betkokios kitos technologijos versijos kurios bus naudojamos. Jeigu projektas yra jau egzistuojantis ir klientas perka tolimesnį projekto vystimą yra išsiaiškinama ar nereikės pakelti projekte naudojamų technologijų versijos.
+		Pasirašius sutartį su klientu pradedama ieškoti konkretaus technologinio sprendimo tinkamo projekto vystimui. Sutatomos konrečios karkasų, duomenų bazių arba betkokios kitos technologijos versijos kurios bus naudojamos. Jeigu projektas yra jau egzistuojantis ir klientas perka tolimesnį projekto vystimą yra išsiaiškinama ar nereikės pakelti projekte naudojamų technologijų versijos.
 	\subsection{Reikalavimų ciklas}
-		Nutarus dėl konkrečių technologijų, kurios bus naudojamos pradedame funkcinių ir nefunkcinių reikalavimų sudarymas. Jų sudarymas vyksta cikliškai, pirma mūsų įmonės verslo analitikas išanalizuoja verslo poreikius ir kartu su architektu sudaro pirminius reikalavimus, jie yra pristatomi klientui kartu su klausimais, įvyksta suformuotų reikalavimų aptarimas. Aptarime dalyvauja architektas, verslo analistas ir verslo žmogus. Jeigu klientas sutinka su sudarytais reikalavimais pradedamas sistemos modeliavimas, jeigu kyla neaiškumų dėl reikalavimų tarp kliento ir mūsų įmonės grįštama prie poreikių sudarimo įmonės viduje. Ciklas vyksta iki tol kol pasiekiamas sutarimas tarp mūsų įmonės ir kliento.
+		Nutarus dėl konkrečių technologijų, kurios bus naudojamos pradedame funkcinių ir nefunkcinių reikalavimų sudarymas. Jų sudarymas vyksta cikliškai, pirma mūsų įmonės verslo analitikas išanalizuoja verslo poreikius ir kartu su architektu sudaro pirminius reikalavimus, jie yra pristatomi klientui kartu su klausimais, įvyksta suformuotų reikalavimų aptarimas. Aptarime dalyvauja architektas, verslo analistas ir verslo žmogus. Jeigu klientas sutinka su sudarytais reikalavimais pradedamas sistemos modeliavimas, jeigu kyla neaiškumų dėl reikalavimų tarp kliento ir mūsų įmonės grįžtama prie poreikių sudarimo įmonės viduje. Ciklas vyksta iki tol kol pasiekiamas sutarimas tarp mūsų įmonės ir kliento.
 	\subsection{Sistemos modeliavimas}
 	\begin{figure}[H]
 	\centering
@@ -72,27 +72,26 @@
 	\label{img:mlp}
 	\end{figure}
 
-	\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{img/NN}
-	\caption{N2 modelio pavyzdys} % Antraštė įterpiama po paveikslėlio
-	\label{img:mlp}
-	\end{figure}
-
 
 
 		Modeliavimas bus vykdomas Ad-hock principu, pasitelkiant praeities žinias arba tiesiog susėdus ekspertams ir bandant išsiaiškinti prindimą.
 		Programų kūrimo proceso modeliavimą sudaro keturios dalys:
 		\begin{enumerate}
-			\item{Funkcinis modeliavimas - šiam modeliavimo žingsniui naudosime N2 lentelę(N2 Chart). Šioje diagramoje apibrėžiame funkcinias ir fizinias sąsajas tarp sistemos elementų }
-			\item{Sistemos architektūra - šiame žingsnyje apibrėšime kaip sąveiką tarp skirtingų sistemos komponentų(duomenų bazių, servisų ir kitą) bei išorinių sistemų. Šiam modeliavimui bus pasitelkta UML komponentų diagramos.}
-			\item{Verslo proceso modeliavimas - šiam modeliavimui bus naudojamos BPMN grafifai apibrėžentys verslo procesus. Sukurti procesai bus analizuojami, gerinami. Bus išskirtos verslo proceso dalys kurias galima automatizuoti.}
+			\item Modeliavimas - šiam modeliavimo žingsniui naudojama N2 lentelę(\ref{img:n} pav.). Šioje diagramoje apibrėžiamos funkcinės ir fizinės sąsajos tarp sistemos elementų.
+				\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{img/NN}
+				\caption{N2 modelio pavyzdys} % Antraštė įterpiama po paveikslėlio
+				\label{img:n}
+				\end{figure}
+			\item{Sistemos architektūra - šiame žingsnyje apibrėžiama sąveiką tarp skirtingų sistemos komponentų(duomenų bazių, servisų ir kitą) bei išorinių sistemų. Šiam modeliavimui bus pasitelkta UML komponentų diagramos.}
+			\item{Verslo proceso modeliavimas - šiam modeliavimui naudojami BPMN grafifai apibrėžentys verslo procesus. Sukurti procesai analizuojami, tobulinami. Taip pat išskiriamos verslo proceso dalys kurias galima automatizuoti.}
 			\item{Įmonės modeliavimas - abstrakčiai sumodeliuojama kaip įmonės procesai įtakos tolimesnį programos vystymą. 
-				Kokie procesų modeliai bus reikalingi sukurti pseudo kodui. Iš procesų modelių ir duomenų modelių kyla reikalavimai. }
+				Kokie procesų modeliai reikalingi sukurti pseudo kodui. Iš procesų modelių ir duomenų modelių kyla reikalavimai. }
 
 		\end{enumerate}
 	\subsection{Sistemos projektavimas}
-	Projektuojant sistema siekiama patenkinti arba siekti išvardintas harakteristikas:
+	Projektuojant sistema siekiama patenkinti arba siekti išvardintas charakteristikas:
 	\begin{itemize}
 		\item{
 			Intersuotų asmenų įvairovė - sistema turis patenkinti įvairių interesuotų asmenų norus ir poreikius, pavyzdžiui vadovai, savininkai, vartotojai ir valdytojai.
@@ -104,7 +103,7 @@
 	\end{itemize}
 	% https://microservices.io
 	\subsubsection{Mikroservisai}
-	"Mėnuliukai technologijos" bando atskirti bendrą sistemą į daug mažesnių sistemų remdamasi dabartine populiaria mikroservisu architektūra.
+	"Mėnuliukų technologijos" bando atskirti bendrą sistemą į daug mažesnių sistemų remdamasi dabartine populiaria mikroservisu architektūra.
 	Kiekviena atskirta sistema turi būti kuo savarankiškesnė ir atlikti būtent vieną funkcionalumą, tačiau jį turės atlikti kuo efektyviau.
 	Mikroservisai turi itin aiškiai apibrėžtas programų sąsajas bei dokumentaciją, kuri akivaizdžiai apibrėžia funkcionalumą.
 	Taip užtikrinama, jog programų sistemos tikslingai atlieka reikalaujamus verslo siekius.
@@ -113,14 +112,14 @@
 	\centering
 	\includegraphics[scale=0.6]{img/micro.png}
 	\caption{Mikroservisų architektūra}
-	\label{img:mlp}
+	\label{img:mikroservizai}
 	\end{figure}
 	Mikroservisų architektūros teikiami privalumai:
 	\begin{itemize}
 		\item{atskiros sistemos dalys yra lengviau prižiūrimos ir lengviau testuojamos}
 		\item{silpna sistemos sąsajo - neglaudus sąryšis tarp komponentų bei programų leidžia daryti pakeitimus, kurie nepropaguoja per visą sistemą}
 		\item{nepriklausomas servisų dalis galima atskirai diegti bei atlikti atnaujinimus nediegiant visos sistemos iš naujo}
-		\item{Maži teamai prižiūri efektyviau sistemos, reikia mažiau komunikacijos}
+		\item{Mažos komandos efektyviau prižiūri sistemą, reikia mažiau komunikacijos}
 		\item{Servisai kuriami pagal įmonės gebėjimus}
 	\end{itemize}
 
