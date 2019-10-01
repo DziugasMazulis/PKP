@@ -62,6 +62,38 @@
 		Tai yra pradinė projekto fazė, kurioje yra užmezgamas dialogas su klientų. Per viešuosius pirkimus arba pačiam klientui susisiekus su įmone prasideda abstrakti sistemos analizė ir pasiūlymo sudarymas. Abstrakčioje sistemos analizėje įvertinami pagrindiniai kliento poreikiai, buvusių projektų patirtis, projekto kompleksiškumas ir dabartinė įmonės būsena. Įvertinama ar įmonė turi visus reikiamus specialistus atlikti darbui, kiek žmonių jau yra įmonėje, kiek reiktų pasisamdyti arba kokius dabus perduoti sub-kontraktoriams.
 	\subsection{Technologinio sprendimo paieška ir įgyvendinimas}
 		Pasirašius sutartį su klientu pradedama ieškoti konkretaus technologinio sprendimo tinkamo projekto vystimui. Sutatomos konrečios karkasų, duomenų bazių arba betkokios kitos technologijos versijos kurios bus naudojamos. Jeigu projektas yra jau egzistuojantis ir klientas perka tolimesnį projekto vystimą yra išsiaiškinama ar nereikės pakelti projekte naudojamų technologijų versijos.
+		Projektuojant sistema siekiama patenkinti arba siekti išvardintas charakteristikas:
+	\begin{itemize}
+		\item{
+			Intersuotų asmenų įvairovė - sistema turis patenkinti įvairių interesuotų asmenų norus ir poreikius, pavyzdžiui vadovai, savininkai, vartotojai ir valdytojai.
+			%Kiekvienas interesuotas asmuo turi savo asmeninius interesuosus, kuriuos nori įvykdyti naudodamasis asmeninius interesuosus, kuriuos nori įvykdyti naudodamasis sistemą.
+			%"Mėnuliukų technologijos" kompanijoje atidžiai ir glaustai bendraujama su interesuotais asmenimis tam kad tiksliai ir akivaizdžiai išsaiškinti interesuotais.
+		}
+		\item{Interesų atskyrimas - bandoma atskirti interesai taip, kad lengviau būtų realizuoti galutinėje sistemoje.  }
+		\item{Remiamasi kokybės užtikrinimu - Bandoma taip pat siekti nefunkcinių reikalavimų užtikrinimu pavyzdžiui užtikrinti greitaveiką.}
+	\end{itemize}
+	% https://microservices.io
+	\subsubsection{Mikroservisai}
+	"Mėnuliukų technologijos" bando atskirti bendrą sistemą į daug mažesnių sistemų remdamasi dabartine populiaria mikroservisu architektūra.
+	Kiekviena atskirta sistema turi būti kuo savarankiškesnė ir atlikti būtent vieną funkcionalumą, tačiau jį turės atlikti kuo efektyviau.
+	Mikroservisai turi itin aiškiai apibrėžtas programų sąsajas bei dokumentaciją, kuri akivaizdžiai apibrėžia funkcionalumą.
+	Taip užtikrinama, jog programų sistemos tikslingai atlieka reikalaujamus verslo siekius.
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/micro.png}
+	\caption{Mikroservisų architektūra}
+	\label{img:mikroservizai}
+	\end{figure}
+	Mikroservisų architektūros teikiami privalumai:
+	\begin{itemize}
+		\item{atskiros sistemos dalys yra lengviau prižiūrimos ir lengviau testuojamos}
+		\item{silpna sistemos sąsajo - neglaudus sąryšis tarp komponentų bei programų leidžia daryti pakeitimus, kurie nepropaguoja per visą sistemą}
+		\item{nepriklausomas servisų dalis galima atskirai diegti bei atlikti atnaujinimus nediegiant visos sistemos iš naujo}
+		\item{Mažos komandos efektyviau prižiūri sistemą, reikia mažiau komunikacijos}
+		\item{Servisai kuriami pagal įmonės gebėjimus}
+	\end{itemize}
+	
 	\subsection{Reikalavimų ciklas}
 		Nutarus dėl konkrečių technologijų, kurios bus naudojamos pradedame funkcinių ir nefunkcinių reikalavimų sudarymas. Jų sudarymas vyksta cikliškai, pirma mūsų įmonės verslo analitikas išanalizuoja verslo poreikius ir kartu su architektu sudaro pirminius reikalavimus, jie yra pristatomi klientui kartu su klausimais, įvyksta suformuotų reikalavimų aptarimas. Aptarime dalyvauja architektas, verslo analistas ir verslo žmogus. Jeigu klientas sutinka su sudarytais reikalavimais pradedamas sistemos modeliavimas, jeigu kyla neaiškumų dėl reikalavimų tarp kliento ir mūsų įmonės grįžtama prie poreikių sudarimo įmonės viduje. Ciklas vyksta iki tol kol pasiekiamas sutarimas tarp mūsų įmonės ir kliento.
 	\subsection{Sistemos modeliavimas}
@@ -77,7 +109,7 @@
 		Modeliavimas bus vykdomas Ad-hock principu, pasitelkiant praeities žinias arba tiesiog susėdus ekspertams ir bandant išsiaiškinti prindimą.
 		Programų kūrimo proceso modeliavimą sudaro keturios dalys:
 		\begin{enumerate}
-			\item Modeliavimas - šiam modeliavimo žingsniui naudojama N2 lentelę(\ref{img:n} pav.). Šioje diagramoje apibrėžiamos funkcinės ir fizinės sąsajos tarp sistemos elementų.
+			\item Modeliavimas - šiam modeliavimo žingsniui naudojama N2 lentelę(\ref{n} pav.). Šioje diagramoje apibrėžiamos funkcinės ir fizinės sąsajos tarp sistemos elementų.
 				\begin{figure}[H]
 				\centering
 				\includegraphics[scale=0.7]{img/NN}
@@ -90,6 +122,18 @@
 				Kokie procesų modeliai reikalingi sukurti pseudo kodui. Iš procesų modelių ir duomenų modelių kyla reikalavimai. }
 
 		\end{enumerate}
+		
+	\subsection{Sprintas}
+	\subsubsection{Sprinto reikalavimų tikslinimas ir vertinimas}
+	\subsubsection{Užduočių analizė}
+	\subsubsection{Programavimas}
+	Šis žingsnis glaudžiai susijęs su prieš jį einančiomis fazėmis, jame vykdomas suprojektuotos sistemos dalies įgyvendinimas, kuris apima kodo rašymą, automatizuotų testų kūrimą, konfigūracijos pakeitimus ir duombazės kūrimą. Ši fazė įgyvendinama tik gerai išsiaiškinus ir susidokumentavus reikalavimus ir jau turint prototipą, kad kuriama programa atitiktų kliento lūkesčius ir reikalingų pakeitimų būtų mažiau.
+	\subsubsection{Kokybės užtikrinimas}
+	Kokybės užtikrinimas skirtingas kiekvienam projektui. Tuose projektuose, kuriuose kuriamoje sistemoje egzistuoja vartotojo sąsaja, atliekamas rankinis testavimas kartu su automatizuotu regresiniu testavimu. Į kokybės užtikrinimą yra įtraukiami ir programuotojai, kurie yra atsakingi už automatizuotų testų teisingumą. Testuotojai atsakingi už rankinį testavimą bei regresinių testų rezultatų apibendrinimą. Jeigu projektas yra iteracinis ir jau išleistas plačiam naudojimui, po sėkmingo testavimo kodas yra sudedamas į aukštesnę aplinką, kurioje yra papildomai pravaliduojamas prieš jį išleidžiant į produkciją.
+	\subsubsection{Konfigūracijos valdymas}
+	\subsubsection{Sprinto aptarimas}
+	\subsubsection{Defekto analizė}
+	\iffalse
 	\subsection{Sistemos projektavimas}
 	Projektuojant sistema siekiama patenkinti arba siekti išvardintas charakteristikas:
 	\begin{itemize}
@@ -129,6 +173,7 @@
 	Šis žingsnis glaudžiai susijęs su prieš jį einančiomis fazėmis, jame vykdomas suprojektuotos sistemos dalies įgyvendinimas, kuris apima kodo rašymą, automatizuotų testų kūrimą, konfigūracijos pakeitimus ir duombazės kūrimą. Ši fazė įgyvendinama tik gerai išsiaiškinus ir susidokumentavus reikalavimus ir jau turint prototipą, kad kuriama programa atitiktų kliento lūkesčius ir reikalingų pakeitimų būtų mažiau.
 	\subsection{Kokybės užtikrinimas}
 	Kokybės užtikrinimas skirtingas kiekvienam projektui. Tuose projektuose, kuriuose kuriamoje sistemoje egzistuoja vartotojo sąsaja, atliekamas rankinis testavimas kartu su automatizuotu regresiniu testavimu. Į kokybės užtikrinimą yra įtraukiami ir programuotojai, kurie yra atsakingi už automatizuotų testų teisingumą. Testuotojai atsakingi už rankinį testavimą bei regresinių testų rezultatų apibendrinimą. Jeigu projektas yra iteracinis ir jau išleistas plačiam naudojimui, po sėkmingo testavimo kodas yra sudedamas į aukštesnę aplinką, kurioje yra papildomai pravaliduojamas prieš jį išleidžiant į produkciją.
+\fi
 	\subsection{Išleidimas}
 	Išleidimo stadiją galima skaidyti į 2 skirtingus tipus - galimas naujas projekto išleidimas, kurio metu vartotojui pateikiama nauja sistema, kuri buvo tam tikrą laiką kuriama. Taip pat egzistuoja kitas variantas, kai yra veikianti sistema, kuri yra atnaujinama kas tam tikrą laiką (tai priklauso nuo sprinto ilgi). Išleidimo metu įmonėje yra vykdomi darbuotojų budėjimai, kad sistemai veikiant ne tiksliai pagal planą, sistemos trikdžiai būtų kuo greičiau pašalinti.
 	\subsection{Palaikymas}
