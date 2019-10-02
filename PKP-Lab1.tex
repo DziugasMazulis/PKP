@@ -53,9 +53,8 @@
 \end{itemize}
 \section{Kūrimo procesas}
 
-	\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{img/SoftwareProcessMoonTechnologies}
+	\begin{figure}[htbp]
+	\includegraphics[scale=0.6]{img/SoftwareProcessMoonTechnologies}
 	\caption{Sistemos kūrimo procesas} % Antraštė įterpiama po paveikslėlio
 	\label{img:kurimoProcesas}
 	\end{figure}
@@ -125,6 +124,29 @@
 	\subsubsection{Programavimas}
 	Šis žingsnis glaudžiai susijęs su prieš jį einančiomis fazėmis, jame vykdomas suprojektuotos sistemos dalies įgyvendinimas, kuris apima kodo rašymą, automatizuotų testų kūrimą, konfigūracijos pakeitimus ir duombazės kūrimą. Ši fazė įgyvendinama tik gerai išsiaiškinus ir susidokumentavus reikalavimus ir jau turint prototipą, kad kuriama programa atitiktų kliento lūkesčius ir reikalingų pakeitimų būtų mažiau.
 	\subsubsection{Kokybės užtikrinimas}
+	\begin{center}
+		\begin{tabular}{ | l | l | } 
+		\hline
+		Pavadinimas: & Kokybės užtikrinimas. \\
+		\hline
+		Tikslas: & Patikrinti sistema su atnaujinta kodo baze veikia teisingai. \\ 
+		\hline
+		Vykdytojai & Testuotojai ir programuotojai. \\ 
+		\hline
+		Veiklos: & V1 - Leidžiami integraciniai testai. \\
+						 & V2 - Testų klaidų analizė ir defektų sūkurimas. \\
+						&	 V3 - Testų rezultatų apibendrinimas. \\ 
+						&	 V4 - Performance testavimas. \\
+		\hline
+		Naudojami produktai: & NP1 - Integraciniai testai.  \\
+												&	 NP2 - ?\\
+		\hline
+		Sukuriami produktai: & SP1 - Nauji defektai. \\
+												&	 SP2 - Testų rezultatų dokumentas \\
+												&	 SP3 - Performance analizės dokumentas. \\
+		\hline
+		\end{tabular}
+		\end{center}
 	Kokybės užtikrinimas skirtingas kiekvienam projektui. Tuose projektuose, kuriuose kuriamoje sistemoje egzistuoja vartotojo sąsaja, atliekamas rankinis testavimas kartu su automatizuotu regresiniu testavimu. Į kokybės užtikrinimą yra įtraukiami ir programuotojai, kurie yra atsakingi už automatizuotų testų teisingumą. Testuotojai atsakingi už rankinį testavimą bei regresinių testų rezultatų apibendrinimą. Jeigu projektas yra iteracinis ir jau išleistas plačiam naudojimui, po sėkmingo testavimo kodas yra sudedamas į aukštesnę aplinką, kurioje yra papildomai pravaliduojamas prieš jį išleidžiant į produkciją.
 	\subsubsection{Konfigūracijos valdymas}
 	Užtikrinant didesnį sistemos patikimumą reikalingos skirtingos aplinkos skirtos testuoti sistemą, šioms aplinkoms palaikyti atliekamas konfigūracijos valdymas - kiekvieno sprinto metu konfigūracijoje ar duomenų bazėje atliktus pakeitimus programuotojas pažymi tam skirtoje vietoje, pagal kurią po sprinto devOps specialistai atlieka konfigūracinius pakeitimus aplinkose, kuriose šie pakeitimai reikalingi. Taip pat po sprinto kodas yra sudedamas į aukštenę aplinką tolimesniam testavimui.
