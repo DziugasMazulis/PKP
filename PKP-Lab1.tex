@@ -46,7 +46,8 @@
 	Proceso pradžioje stengiamės su užsakovu išsiaiškinti norimus įgyvendinti funkcionalumus ir bendraujant kartu su užsakovu sudaryti reikalavimus. 
 	Sudarant reikalavimus yra diskutuojama ir sistemos ateities vizija siekiant susidaryti geresnę perspektyvą sistemos ateičiai ir darbartiniams reikalavimams.
 	Įmonė įvertina kiek valandų užtruks kiekvieno funkcionalumo sukūrimas ir mokestis yra imamas už pradirbtas valandas.
-	Klientui nesutikus su pateiktomis kainomis yra daromi susitikimai siekiant paaiškinti valandų vertinimą. Po susitikimų funkcionalumo įgyvendinimo valandos gali keistis, arba funkcionalumas bus atsisakytas.
+	Klientui nesutikus su pateiktomis kainomis yra daromi susitikimai siekiant paaiškinti valandų vertinimą. Po susitikimų funkcionalumo įgyvendinimo valandos gali keistis, arba funkcionalumas bus atsisakytas. 
+	Kiekvieno sprinto pradžioje, po reikalavimų pasitikslinimo, yra sudaromi priėmimo testai, kuriuos praėjus kliento prašoma susimokėti už atliktus darbus.
 
 \section{Kūrimo procesas}
 \todo[inline]{Pridėti acceptance testing cikle su programavimu. Iš kokybės užtikrino proceso gali atsirasti naujas defektas.}
@@ -79,20 +80,46 @@
 	\item Pasirašoma pradinė sutartis, kurioje dokumentuojama prieš tai aptarta informacija. Ši sutartis galioja iki pirmojo prototipo pasiūlymo, po kurio atnaujinamos derybės dėl tolesnio projekto vystymo.
 \end{enumerate}
 
+
+
+
 	\subsection{Technologinio sprendimo paieška ir įgyvendinimas}
-	\todo[inline]{update}
-		Pasirašius sutartį su klientu pradedama ieškoti konkretaus technologinio sprendimo tinkamo projekto vystimui. Sutatomos konrečios karkasų, duomenų bazių arba betkokios kitos technologijos versijos kurios bus naudojamos. Jeigu projektas yra jau egzistuojantis ir klientas perka tolimesnį projekto vystimą yra išsiaiškinama ar nereikės pakelti projekte naudojamų technologijų versijos.
-		Projektuojant sistema siekiama patenkinti arba siekti išvardintas charakteristikas:
-	\begin{itemize}
-		\item{
-			Intersuotų asmenų įvairovė - sistema turis patenkinti įvairių interesuotų asmenų norus ir poreikius, pavyzdžiui vadovai, savininkai, vartotojai ir valdytojai.
-			%Kiekvienas interesuotas asmuo turi savo asmeninius interesuosus, kuriuos nori įvykdyti naudodamasis asmeninius interesuosus, kuriuos nori įvykdyti naudodamasis sistemą.
-			%"Mėnuliukų technologijos" kompanijoje atidžiai ir glaustai bendraujama su interesuotais asmenimis tam kad tiksliai ir akivaizdžiai išsaiškinti interesuotais.
-		}
-		\item{Interesų atskyrimas - bandoma atskirti interesai taip, kad lengviau būtų realizuoti galutinėje sistemoje.  }
-		\item{Remiamasi kokybės užtikrinimu - Bandoma taip pat siekti nefunkcinių reikalavimų užtikrinimu pavyzdžiui užtikrinti greitaveiką.}
-	\end{itemize}
+
+		\begin{center}
+			\begin{table}[ht]
+				\caption{Technologinio sprendimo paieškos ir įgyvendinimo procesas.}
+					\begin{tabular}{ | l | l | } 
+						\hline
+							Pavadinimas:         & Technologinio sprendimo paieška ir įgyvendinimas                                      \\ \hline
+							Tikslas: 	           & Išskirti technologijas ir jų versijas kurios bus naudojamos projekte 							\\ \hline
+							Vykdytojai:          & Projekto vadovas, klientas, programuotojas.                             \\ \hline
+							Veiklos:             & V1 - Aptarti technologijas šiuo metu naudojamas projekte. 													\\
+											 & V2 - Nustatomos technologijų kainos kurios bus naudojamos projekte. \\
+											 & V3 - Nutariama dėl technologinių alternatyvų.													\\ \hline
+							Naudojami produktai: & NP1 - Esamos sistemos dokumentacija, norimų naudoti technologijų dokumentacija ir kainynas. 													 \\ \hline
+							Sukuriami produktai: & SP1 - Technologinių sprendimų ir jų alternatyvų dokumentas su preliminariomis technologijų licensijų kainomis. 								\\ \hline
+\end{tabular}
+\end{table}
+\end{center}
+
+\begin{enumerate}
+	\item{Aptarti technologijas šiuo metu naudojamas projekte - išskiriami technologiniai karkasai, duomenų bazės, programavimo kalbų versijos ir kitos naudojamos technologijos ir jų versijos.
+	Įvertinamas esamų technologijų saugumo lygis, greitaveika ir ateities palaikymas. 
+	Pasiūlomi technologiniai sprendimai pagrindžiant jų naudą sistemai.}
+	\item{Nustatomos technologijų kainos, kurios bus naudojamos projekte - paskaičiuojamas dabartinių technologijų kainos ir naujų siūlomų technologijų kainos.}
+	\item{Nutariama dėl technologinių alternatyvų - jeigu įmanoma klientui pasiūloma atviro kodo technologiniai sprendimai siekiant sutaupyti pinigų. 
+		Pateikiamas palyginimas tarp dabartinės sistemos technologijos, siūlomos technologijos ir atviro kodo technologijos sprendimų. }
+\end{enumerate}
 	
+
+
+
+
+
+
+
+
+
 	\subsection{Reikalavimų ciklas}
 	\todo[inline]{update}
 		Nutarus dėl konkrečių technologijų, kurios bus naudojamos pradedame funkcinių ir nefunkcinių reikalavimų sudarymas. Jų sudarymas vyksta cikliškai, pirma mūsų įmonės verslo analitikas išanalizuoja verslo poreikius ir kartu su architektu sudaro pirminius reikalavimus, jie yra pristatomi klientui kartu su klausimais, įvyksta suformuotų reikalavimų aptarimas. Aptarime dalyvauja architektas, verslo analistas ir verslo žmogus. Jeigu klientas sutinka su sudarytais reikalavimais pradedamas sistemos modeliavimas, jeigu kyla neaiškumų dėl reikalavimų tarp kliento ir mūsų įmonės grįžtama prie poreikių sudarimo įmonės viduje. Ciklas vyksta iki tol kol pasiekiamas sutarimas tarp mūsų įmonės ir kliento.

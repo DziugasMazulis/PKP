@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6500 64-bit) (preloaded format=xelatex 2017.10.31)  4 OCT 2019 17:08
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6500 64-bit) (preloaded format=xelatex 2017.10.31)  4 OCT 2019 17:52
 entering extended mode
 **./PKP-Lab1.tex
 (PKP-Lab1.tex
@@ -1667,11 +1667,7 @@ LaTeX Info: Redefining \nameref on input line 38.
 \@outlinefile=\write6
 \openout6 = `PKP-Lab1.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
@@ -1697,61 +1693,48 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 )
 [1
 
-] [2]
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+] [2] (PKP-Lab1.toc)
 \tf@toc=\write7
 \openout7 = `PKP-Lab1.toc'.
 
-[1
+ [1
 
 ] [2
 
 ]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 52.
+ine 53.
 File: img/SoftwareProcessMoonTechnologies.png Graphic file (type bmp)
 <img/SoftwareProcessMoonTechnologies.png>
  [3
 
-] [4]
+]
+Overfull \hbox (201.98955pt too wide) in paragraph at lines 91--102
+[][] 
+ []
+
+[4]
 File: img/SistemosModeliavimas.png Graphic file (type bmp)
 <img/SistemosModeliavimas.png>
-
-
-LaTeX Warning: Hyper reference `mikro' on page 5 undefined on input line 109.
-
+ [5]
 File: img/micro.png Graphic file (type bmp)
 <img/micro.png>
-[5] [6] [7] [8] [9] [10] [11
+ [6] [7] [8] [9] [10] [11
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
  (PKP-Lab1.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 221.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 221.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                PKP-Lab1
-(biblatex)                and rerun LaTeX afterwards.
-
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 248.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 248.
 Package logreq Info: Writing requests to 'PKP-Lab1.run.xml'.
 \openout1 = `PKP-Lab1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40346 strings out of 427823
- 767871 string characters out of 3152321
- 1277781 words of memory out of 3000000
+ 40348 strings out of 427823
+ 767856 string characters out of 3152321
+ 1279854 words of memory out of 3000000
  43813 multiletter control sequences out of 15000+200000
  543558 words of font info for 89 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
