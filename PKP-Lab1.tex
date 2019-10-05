@@ -240,9 +240,24 @@
 		\end{center}
 	Komandos efektyvumui labai svarbu aptarti praėjusį sprintą: kas trukdė efektyviam darbui, kas gerai sekės, kokias programavimo veiklas tęsti, kokias nutraukti, kokios komandos nuotaikos ir to priežastys. Šioje veikloje dažniausiai dalyvauja tik komanda, o jos rezultatas - pagal išreikštus pastebėjimus išskirti tobulėjimo punktai, kurių laikomasi būsimame sprinte siekiant geresnės ir greitesnės projekto implementacijos. Tai gali būti aktyvus kažkokių procesų vykdymo trukdžių sprendimas, komunikacija su kitomis komandomis ar klientu dėl iškilusių problemų.
 	\subsubsection{Defekto analizė}
-	\todo[inline]{Update}
-	Defekto analizės procesas pradedamas problemos identifikavimu. Vartotojo arba testuotojo aptikas defektas yra užregistruojamas aprašant sąlygas, reikalingas atkurti defektą, bei priskiriamas atitinkamai defektų klasei. Programuotojas išanalizuoja defektą, suranda defekto priežastį bei apibrėžia ir įgyvendina priežasčiai išspręsti reikalingą veiksmų seką. Įgyvendinus šiuos žingsnius belieka įsitikinti, kad procesas atnešė pageidaujamą rezultatą - defektas nurodytomis sąlygomis neegzistuoja.
-
+	\begin{center}
+		\begin{table}[ht]
+		\caption{Defekto analizė}
+		\begin{tabular}{ | l | l | } 
+		\hline
+		Pavadinimas:         & Defekto analizė                               \\ \hline
+		Tikslas: 	           & Pašalinti defektą\\ \hline
+		Vykdytojai:          & Programuotojai ir testuotojai                                \\ \hline
+		Veiklos:             & V1 - Defekto registracija 													\\ 
+						             & V2 - Defekto analizė \\ 
+									  & V3 - Defekto pašalinimas 																			 \\ 
+									  & V4 - Patikrinimas ar defektas pašalintas \\ \hline
+		Naudojami produktai: & NP1 - Esama sistema																																															 \\ \hline
+		Sukuriami produktai: & SP1 - Defektų sąrašas																											\\ \hline
+		\end{tabular}
+	\end{table}
+		\end{center}
+	Defekto analizės procesas pradedamas problemos identifikavimu. Vartotojo arba testuotojo aptikas defektas yra užregistruojamas aprašant sąlygas, reikalingas atkurti defektą, bei priskiriamas atitinkamai defektų klasei. Programuotojas išanalizuoja defektą, suranda defekto priežastį bei apibrėžia ir įgyvendina defektui pašalinti reikalingą veiksmų seką. Įvykdžius šiuos žingsnius belieka įsitikinti, kad procesas atnešė pageidaujamą rezultatą - defektas nurodytomis sąlygomis nepasikartoja.
 	\subsection{Išleidimas}
 	\todo[inline]{Update}
 	Išleidimo stadiją galima skaidyti į 2 skirtingus tipus - galimas naujas projekto išleidimas, kurio metu vartotojui pateikiama nauja sistema, kuri buvo tam tikrą laiką kuriama. Taip pat egzistuoja kitas variantas, kai yra veikianti sistema, kuri yra atnaujinama kas tam tikrą laiką (tai priklauso nuo sprinto ilgi). Išleidimo metu įmonėje yra vykdomi darbuotojų budėjimai, kad sistemai veikiant ne tiksliai pagal planą, sistemos trikdžiai būtų kuo greičiau pašalinti.
