@@ -319,16 +319,19 @@
 		Pavadinimas:         & Defekto analizė                               \\ \hline
 		Tikslas: 	           & Pašalinti defektą\\ \hline
 		Vykdytojai:          & Programuotojai ir testuotojai                                \\ \hline
-		Veiklos:             & V1 - Defekto registracija 													\\ 
-						             & V2 - Defekto analizė \\ 
+		Veiklos:             & V2 - Defekto analizė \\ 
 									  & V3 - Defekto pašalinimas 																			 \\ 
 									  & V4 - Patikrinimas ar defektas pašalintas \\ \hline
-		Naudojami produktai: & NP1 - Esama sistema																																															 \\ \hline
-		Sukuriami produktai: & SP1 - Defektų sąrašas																											\\ \hline
+		Naudojami produktai: & NP1 - Defekto aprašymas																											 \\ \hline
+		Sukuriami produktai: & SP1 - Defekto analizė																											\\ 
+												& SP2 - Defekto sprendimas \\ \hline
 		\end{tabular}
 	\end{table}
 		\end{center}
-	Defekto analizės procesas pradedamas problemos identifikavimu. Vartotojo arba testuotojo aptikas defektas yra užregistruojamas aprašant sąlygas, reikalingas atkurti defektą, bei priskiriamas atitinkamai defektų klasei. Programuotojas išanalizuoja defektą, suranda defekto priežastį bei apibrėžia ir įgyvendina defektui pašalinti reikalingą veiksmų seką. Įvykdžius šiuos žingsnius belieka įsitikinti, kad procesas atnešė pageidaujamą rezultatą - defektas nurodytomis sąlygomis nepasikartoja.
+		\begin{enumerate}
+			\item Gavus defektą programuotojas pagal pateiktus žingsnius pakartoją defektą (jeigu jo pakartoti nepavyksta, jis grąžinamas atgal), bei išanalizuoja to defekto priežastis, bei galimą sprendimą.
+			\item Suradus sprendimą defektas yra pašalinamas, jeigu reikia papildomi automatiniai testai, kurie patikrina funkcionalumo atvėjį, kuriame buvo gautas defektas.
+		\end{enumerate}
 	\subsection{Išleidimas}
 	\begin{center}
 		\begin{table}[ht]
