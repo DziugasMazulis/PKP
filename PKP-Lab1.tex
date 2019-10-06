@@ -290,8 +290,26 @@
 	Kokybės užtikrinimas skirtingas kiekvienam projektui. Tuose projektuose, kuriuose kuriamoje sistemoje egzistuoja vartotojo sąsaja, atliekamas rankinis testavimas kartu su automatizuotu regresiniu testavimu. Į kokybės užtikrinimą yra įtraukiami ir programuotojai, kurie yra atsakingi už modulių testų rašymą ir klaidų taisymą. Testuotojai atsakingi už rankinį testavimą, automatizuotų testų rašymą bei regresinių testų rezultatų apibendrinimą. Jeigu projektas yra iteracinis ir jau išleistas plačiam naudojimui, po sėkmingo testavimo kodas yra sudedamas į aukštesnę aplinką, kurioje yra papildomai pravaliduojamas prieš jį išleidžiant į produkciją. Jei testavimas parodė defektus - jie užregistruojami kaip užduotys ir jų taisymui, pagal jų sunkumą, skiriamas prioritetas. 
 	\par Ir programuotojai ir testuotojai atsakingi už tvarkingą ir kokybišką kodą ir sklandų programos veikimą. Viena rečiau minima kokybės užtikrinimo dalis yra kodo peržiūra. Kiekvienas programuotojas yra atsakingas už kitų savo rato programuotojų kodo peržiūrą prieš jo kėlimą į aukštesnes aplinkas. Taip išvengiama kartais net labai sunkių klaidų dėl vieno ar kelių žmonių apsižiūrėjimo. Tuo pačiu išvengiama nedarbingo laiko, kuris atsirado dėl kitų programos dalių sulaužančio kodo įdėjimo į pagrindinę ''master'' kodo bazę.
 	\subsubsection{Konfigūracijos valdymas}
-	\todo[inline]{Update. Nutart, kas pas mus yra konfigūracijos valdymas.}
-	Užtikrinant didesnį sistemos patikimumą reikalingos skirtingos aplinkos skirtos testuoti sistemą, šioms aplinkoms palaikyti atliekamas konfigūracijos valdymas - kiekvieno sprinto metu konfigūracijoje ar duomenų bazėje atliktus pakeitimus programuotojas pažymi tam skirtoje vietoje, pagal kurią po sprinto devOps specialistai atlieka konfigūracinius pakeitimus aplinkose, kuriose šie pakeitimai reikalingi. Taip pat po sprinto kodas yra sudedamas į aukštenę aplinką tolimesniam testavimui.
+	\subsubsection{Programavimas}
+	\begin{center}
+		\begin{table}[ht]
+		\caption{Konfigūracijos valdymo procesas}
+		\begin{tabular}{ | l | l | } 
+		\hline
+		Pavadinimas:         & Konfigūracijos valdymas.                      \\ \hline
+		Tikslas: 	           & Atnaujinti sprinto konfigūraciją.      \\ \hline
+		Vykdytojai:          & devOps specialistai, programuotojai.                       \\ \hline
+		Veiklos:             & V1 - Repozitorijos su konfigūracijomis atnaujinimas. 									  \\
+						             & V2 - Duomenų bazės atnaujinimas. 							 \\ \hline
+		Naudojami produktai: & NP1 - Konfigūracijos pakeitimų sąrašas.								 \\ \hline
+		Sukuriami produktai: & SP1 - Pamodifikuota konfigūracijų repozitorija. 							  		\\
+												 & SP2 - Atnaujinta duomenų bazė. 											 \\  \hline
+		\end{tabular}
+	\end{table}
+		\end{center}
+		\begin{enumerate}
+			\item Sprinto pabaigoje devOps specialistai peržvelgia atliktus konfigūracinius pakeitimus, kuriuos programuotojai pažymi sprinto metu. Šie konfigūracijos pakeitimai yra įdedami į aukštesnę aplinką. Taip pat po sprinto kodas yra sudedamas į aukštenę aplinką tolimesniam testavimui.
+		\end{enumerate}
 	\subsubsection{Sprinto aptarimas}
 	\begin{center}
 		\begin{table}[ht]
