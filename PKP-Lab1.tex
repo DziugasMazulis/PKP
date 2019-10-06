@@ -50,7 +50,6 @@
 	Kiekvieno sprinto pradžioje, po reikalavimų pasitikslinimo, yra sudaromi priėmimo testai, kuriuos praėjus kliento prašoma susimokėti už atliktus darbus.
 
 \section{Kūrimo procesas}
-\todo[inline]{Pridėti acceptance testing cikle su programavimu. Iš kokybės užtikrino proceso gali atsirasti naujas defektas.}
 	\begin{figure}[htbp]
 	\includegraphics[scale=0.6]{img/SoftwareProcessMoonTechnologies}
 	\caption{Sistemos kūrimo procesas} % Antraštė įterpiama po paveikslėlio
@@ -238,6 +237,25 @@
 	\subsubsection{Programavimas}
 	\todo[inline]{Update}
 	Šis žingsnis glaudžiai susijęs su prieš jį einančiomis fazėmis, jame vykdomas suprojektuotos sistemos dalies įgyvendinimas, kuris apima kodo rašymą, automatizuotų testų kūrimą, konfigūracijos pakeitimus ir duombazės kūrimą. Ši fazė įgyvendinama tik gerai išsiaiškinus ir susidokumentavus reikalavimus ir jau turint prototipą, kad kuriama programa atitiktų kliento lūkesčius ir reikalingų pakeitimų būtų mažiau.
+	\subsubsection{Priėmimo testavimas}
+	\begin{center}
+		\begin{table}[ht]
+		\caption{Priėmimo testavimo procesas}
+		\begin{tabular}{ | l | l | } 
+		\hline
+		Pavadinimas:         & Priėmimo testavimas                                       \\ \hline
+		Tikslas: 	           & Patikrinti ar sistema atitinka verslo reikalavimus \\ \hline
+		Vykdytojai:          & Analistas ir programuotojai                                \\ \hline
+		Veiklos:             & V1 - Priėmimo testavimo planavimas													\\
+						             & V2 - Priėmimo testų klasifikavimas					 \\
+					 	             & V3 - Priėmimo testavimas 														\\ \hline
+		Naudojami produktai: & NP1 - Verslo reikalavimų dokumentas 																				\\ \hline
+		Sukuriami produktai: & SP1 Priėmimo testų planas 																								\\
+												 & SP2 - Priėmimo testai																	 \\ \hline
+		\end{tabular}
+	\end{table}
+		\end{center}
+	Priėmimo testavimo procesas vykdomas cikliškai su programavimo procesu kiekviename sprinte. Proceso metu, prieš sukurtos sistemos ar jos dalies pristatymą klientui, tikrinama, ar sukurta sistema atitinka verslo reikalavimus. Įmonė vykdo vidinį priėmimo testavimą, kurį atlieka įmonėje dirbantys, tačiau teisiogiai su projektu, kodavimu ar testavimu nesusiję darbuotojai. Tam tikrais atvejais naujai programos versijai gali būti vykdomas dūmų testas prieš kokybės užtikrinimo procesą. Priėmimo testavimo procesą sudaro priėmimo testavimo planavimas, testų klasifikavimas bei priėmimo testavimas.
 	\subsubsection{Kokybės užtikrinimas}
 	\todo[inline]{Papildyt aprašymą po lentele, pridėt automated testing.}
 	\begin{center}
@@ -285,7 +303,7 @@
 	\subsubsection{Defekto analizė}
 	\begin{center}
 		\begin{table}[ht]
-		\caption{Defekto analizė}
+		\caption{Defekto analizės procesas}
 		\begin{tabular}{ | l | l | } 
 		\hline
 		Pavadinimas:         & Defekto analizė                               \\ \hline
