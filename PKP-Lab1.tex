@@ -21,8 +21,8 @@
 \faculty{Matematikos ir informatikos fakultetas}
 \department{Programų sistemų katedra}
 \papertype{Programų kūrimo proceso laboratorinis darbas}
-\title{Įmonės ,,Mėnuliukų technologijos" programų kūrimo proceso aprašas (Pirmas laboratorinis darbas)}
-\titleineng{Description of the development process of the ,,Moon Technologies" company (First laboratory work)}
+\title{Įmonės ,,Mėnuliukų technologijos" programų kūrimo proceso aprašas}
+\titleineng{Description of the development process of the ,,Moon Technologies" company}
 \status{4 kurso 3 grupės studentai}
 \author{Matas Savickis, Justas Tvarijonas, Džiugas Mažulis}
 \secondauthor{Greta Pyrantaitė, Andrius Bentkus}
@@ -68,7 +68,7 @@
 	Vykdytojai:          & Projekto vadovas ir klientas.                             \\ \hline
 	Veiklos:             & V1 - Aptariama sistemos aprėptis. 													\\
 											 & V2 - Nustatomos kainos ribos iki pirmo sistemos išleidimo.  \\
-											 & V3 - Pirminės sutarties pasirašymas .													\\ \hline
+											 & V3 - Pirminės sutarties pasirašymas.													\\ \hline
 	Naudojami produktai: & NP1 - Buvusių projektų dokumentai. 													 \\ \hline
 	Sukuriami produktai: & SP1 - Pirminė sutartis sistemos projektavimui. 								\\ \hline
 \end{tabular}
@@ -96,7 +96,7 @@
 					\end{tabular}
 			\end{table}
 		\end{center}
-
+\newpage
 \begin{enumerate}
 	\item{Aptariamos technologijos, kurios šiuo metu naudojamos projekte - išskiriami technologiniai karkasai, duomenų bazės, programavimo kalbų versijos ir kitos naudojamos technologijos ir jų versijos.
 	Įvertinamas esamų technologijų saugumo lygis, greitaveika ir ateities palaikymas. 
@@ -129,7 +129,7 @@
 	\item{Pristatome klientui sudarytus funkcinius reikalavimus ir tiksliname pateiktus verslo reikalavimus - suformavus funkcinius reikalavimus planuojami susitikimai su klientu, siekiant jam pristatyti suformuotus reikalavimus, patikslinti pateiktus verslo reikalavimus ir toliau tikslinti reikalavimus iki kol reikalavimai tenkis klientą ir bus suprantami programuotojų komandai, kuri dirbs prie kliento projekto.}
 	\item{Siūlomi nefunkciniai reikalavimai - jeigu klientas pats nepateikė nefunkcinių reikalavimų įmonė pati pateikia nefunkcinių reikalavimų siūlymus pagal esamo projekto apimtį ir biudžetą. Pateikti nefunkciniai reikalavimai yra aptariami ir tikslinami su klientu.}
 \end{enumerate}
-		
+		\newpage
 	\subsection{Sistemos modeliavimas}
 	\begin{center}
 		\begin{table}[ht]
@@ -137,10 +137,10 @@
 		\begin{tabular}{ | l | l | } 
 		\hline
 	Pavadinimas:         & Sistemos modeliavimas.          		 					 \\ \hline
-	Tikslas: 	           & Skurti pradinę sistemos versiją. 																	\\ \hline
+	Tikslas: 	           & Sukurti pradinę sistemos versiją. 																	\\ \hline
 	Vykdytojai:          & Programuotojas, analistas.  \\ \hline
 	Veiklos:             & V1 - Reikalavimų analizė iš implementacijos pusės. 		          \\
-											 & V2 - Pradinės sistemos rašimas ir testavimas.					             \\
+											 & V2 - Pradinės sistemos rašymas ir testavimas.					             \\
 											 & V3 - Atnaujintos sutarties pasirašymas.									          \\ \hline
 	Naudojami produktai: & NP1 - Sistemos reikalavimai. 													  \\
 											 & NP2 - Architektūrinių sprendimų dokumentas. \\ \hline
@@ -151,8 +151,8 @@
 \end{center}
 
 \begin{enumerate} 
-	\item Pagal gautus reikalavimus programuotojų komanda sumodeliuoja pradinės sistemos implementaciją, pradedama rašyti kodo bazė ant kuriuos ateinančiuose sprintuose bus statoma visa sistema.
-	\item Sukurtas sistemos modelis yra pristatomas klientui, jeigu jį tenkina pasirinkta kryptis, yra pasirašoma sutartis tolimesniam bendradarbiavimui.
+	\item Pagal gautus reikalavimus programuotojų komanda sumodeliuoja pradinės sistemos implementaciją, pradedama rašyti kodo bazė, ant kurios ateinančiuose sprintuose bus statoma visa sistema.
+	\item Sukurtas sistemos modelis yra pristatomas klientui ir, jeigu jį tenkina pasirinkta kryptis, yra pasirašoma sutartis tolimesniam bendradarbiavimui.
 \end{enumerate}
 		
 	\subsection{Sprintas}
@@ -269,6 +269,7 @@
 		\end{center}
 	Kokybės užtikrinimas skirtingas kiekvienam projektui. Tuose projektuose, kuriuose kuriamoje sistemoje egzistuoja vartotojo sąsaja, atliekamas rankinis testavimas kartu su automatizuotu regresiniu testavimu. Į kokybės užtikrinimą yra įtraukiami ir programuotojai, kurie yra atsakingi už modulių testų rašymą ir klaidų taisymą. Testuotojai atsakingi už rankinį testavimą, automatizuotų testų rašymą bei regresinių testų rezultatų apibendrinimą. Jeigu projektas yra iteracinis ir jau išleistas plačiam naudojimui, po sėkmingo testavimo kodas yra sudedamas į aukštesnę aplinką, kurioje yra papildomai pravaliduojamas prieš jį išleidžiant į produkciją. Jei testavimas parodė defektus - jie užregistruojami kaip užduotys ir jų taisymui, pagal jų sunkumą, skiriamas prioritetas. 
 	\par Ir programuotojai ir testuotojai atsakingi už tvarkingą ir kokybišką kodą ir sklandų programos veikimą. Viena rečiau minima kokybės užtikrinimo dalis yra kodo peržiūra. Kiekvienas programuotojas yra atsakingas už kitų savo rato programuotojų kodo peržiūrą (angl. Pull Request review) prieš jo kėlimą į aukštesnes aplinkas. Taip išvengiama kartais net labai sunkių klaidų dėl vieno ar kelių žmonių apsižiūrėjimo. Tuo pačiu išvengiama nedarbingo laiko, kuris atsirado dėl kitų programos dalių sulaužančio kodo įdėjimo į pagrindinę ''master'' kodo bazę.
+	\newpage
 	\subsubsection{Konfigūracijos valdymas}
 	\begin{center}
 		\begin{table}[ht]
@@ -286,9 +287,7 @@
 		\end{tabular}
 	\end{table}
 		\end{center}
-		\begin{enumerate}
-			\item Sprinto pabaigoje devOps specialistai peržvelgia atliktus konfigūracinius pakeitimus, kuriuos programuotojai pažymi sprinto metu. Šie konfigūracijos pakeitimai yra įdedami į aukštesnę aplinką. Taip pat po sprinto kodas yra sudedamas į aukštesnę aplinką tolimesniam testavimui.
-		\end{enumerate}
+		Sprinto pabaigoje devOps specialistai peržvelgia atliktus konfigūracinius pakeitimus, kuriuos programuotojai pažymi sprinto metu. Šie konfigūracijos pakeitimai yra įdedami į aukštesnę aplinką. Taip pat po sprinto kodas yra sudedamas į aukštesnę aplinką tolimesniam testavimui.
 	\subsubsection{Sprinto aptarimas}
 	\begin{center}
 		\begin{table}[ht]
@@ -307,6 +306,8 @@
 	\end{table}
 		\end{center}
 	Komandos efektyvumui labai svarbu aptarti praėjusį sprintą: kas trukdė efektyviam darbui, kas gerai sekės, kokias programavimo veiklas tęsti, kokias nutraukti, kokios komandos nuotaikos ir to priežastys. Šioje veikloje dažniausiai dalyvauja tik komanda, o jos rezultatas - pagal išreikštus pastebėjimus išskirti tobulėjimo punktai, kurių laikomasi būsimame sprinte siekiant geresnės ir greitesnės projekto implementacijos. Tai gali būti aktyvus kažkokių procesų vykdymo trukdžių sprendimas, komunikacija su kitomis komandomis ar klientu dėl iškilusių problemų.
+	
+	\newpage
 	\subsubsection{Defekto sprendimas}
 	\begin{center}
 		\begin{table}[ht]
@@ -346,6 +347,7 @@
 	\end{table}
 		\end{center}
 	Išleidimo stadiją galima skaidyti į 2 skirtingus tipus - galimas naujas projekto išleidimas, kurio metu vartotojui pateikiama nauja sistema, kuri buvo tam tikrą laiką kuriama. Taip pat galimas variantas, kai egzistuoja veikianti sistema, kuri yra periodiškai atnaujinama (priklausomai nuo sprinto ilgio). Išleidimo metu įmonėje budi darbuotojai, atsakingi už greitą išleistos sistemos trikdžių pašalinimą.
+	\newpage
 	\subsection{Palaikymas}
 	\begin{center}
 		\begin{table}[ht]
