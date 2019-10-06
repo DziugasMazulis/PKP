@@ -78,12 +78,7 @@
 	\item Po susitikimo įmonė paruošia pradininį pasiūlymą, į kurį įeina orientacinės finansų ribos, žmonių ištekliai, kurie galėtų būtų skiriami šiam projektui. Šis pasiūlymas aptariamas su klientu, kartu su juo dokumentuojami funkcionalumai, kurių klientas nori pirmame sistemos išleidime. Sėkmingai tesiantis tolesnėms deryboms nutariama dėl pradinio technologinio sprendimo pasiūlymo datos, bei finansavimo jam.
 	\item Pasirašoma pradinė sutartis, kurioje dokumentuojama prieš tai aptarta informacija. Ši sutartis galioja iki pirmojo prototipo pasiūlymo, po kurio atnaujinamos derybos dėl tolesnio projekto vystymosi.
 \end{enumerate}
-
-
-
-
 	\subsection{Technologinio sprendimo paieška ir įgyvendinimas}
-
 		\begin{center}
 			\begin{table}[ht]
 				\caption{Technologinio sprendimo paieškos ir įgyvendinimo procesas.}
@@ -134,44 +129,30 @@
 	\item{Siūlomi nefunkciniai reikalavimai - jeigu klientas pats nepateikė nefunkcinių reikalavimų įmonė pati pateikia nefunkcinių reikalavimų siūlymus pagal esamo projekto apimtį ir biudžetą. Pateikti nefunkciniai reikalavimai yra aptariami ir tikslinami su klientu.}
 \end{enumerate}
 		
-		
-
 	\subsection{Sistemos modeliavimas}
-	\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{img/SistemosModeliavimas}
-	\caption{Sistemos modeliavimas} % Antraštė įterpiama po paveikslėlio
-	\label{img:mlp}
-	\end{figure}
-		Modeliavimas vykdomas Ad-hock principu, pasitelkiant praeities žinias arba tiesiog susėdus ekspertams ir bandant išsiaiškinti sprendimą.
-		Programų kūrimo proceso modeliavimą sudaro keturios dalys:
-		\begin{enumerate}
-		\item Sistemos architektūra - šiame žingsnyje apibrėžiama sąveiką tarp skirtingų sistemos komponentų(duomenų bazių, servisų ir kitą) bei išorinių sistemų. Šiam modeliavimui pasitelkta UML komponentų diagramos. Sistema yra išskaidoma į skirtingus \hyperref[mikro]{mikroservizus}
-		\item Verslo proceso modeliavimas - šiam modeliavimui naudojami BPMN grafifai apibrėžentys verslo procesus. Sukurti procesai analizuojami, tobulinami. Taip pat išskiriamos verslo proceso dalys kurias galima automatizuoti.
-		\item Įmonės modeliavimas - abstrakčiai sumodeliuojama kaip įmonės procesai įtakos tolimesnį programos vystymą. 
-			Kokie procesų modeliai reikalingi sukurti pseudo kodui. Iš procesų modelių ir duomenų modelių kyla reikalavimai.
-		\end{enumerate}
-		\subsubsection{Mikroservisai}
-		\label{mikro} 
-		"Mėnuliukų technologijos" bando atskirti bendrą sistemą į daug mažesnių sistemų remdamasi dabartine populiaria mikroservisu architektūra.
-		Kiekviena atskirta sistema turi būti kuo savarankiškesnė ir atlikti būtent vieną funkcionalumą, tačiau jį turės atlikti kuo efektyviau.
-		Mikroservisai turi itin aiškiai apibrėžtas programų sąsajas bei dokumentaciją, kuri akivaizdžiai apibrėžia funkcionalumą.
-		Taip užtikrinama, jog programų sistemos tikslingai atlieka reikalaujamus verslo siekius.
+	\begin{center}
+		\begin{table}[ht]
+			\caption{Sistemos modeliavimo procesas}
+		\begin{tabular}{ | l | l | } 
+		\hline
+	Pavadinimas:         & Sistemos modeliavimas.          		 					 \\ \hline
+	Tikslas: 	           & Skurti pradinę sistemos versiją. 																	\\ \hline
+	Vykdytojai:          & Programuotojas, analistas.  \\ \hline
+	Veiklos:             & V1 - Reikalavimų analizė iš implementacijos pusės. 		          \\
+											 & V2 - Pradinės sistemos rašimas ir testavimas.					             \\
+											 & V3 - Atnaujintos sutarties pasirašymas.									          \\ \hline
+	Naudojami produktai: & NP1 - Sistemos reikalavimai. 													  \\
+											 & NP2 - Architektūrinių sprendimų dokumentas. \\ \hline
+	Sukuriami produktai: & SP1 - Pradinė kodo bazė. 																	          \\
+											 & SP2 - Atnaujinta projekto sutartis.										           \\ \hline
+\end{tabular}
+\end{table}
+\end{center}
 
-		\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.6]{img/micro.png}
-		\caption{Mikroservisų architektūra}
-		\label{img:mikroservizai}
-		\end{figure}
-		Mikroservisų architektūros teikiami privalumai:
-		\begin{itemize}
-			\item{atskiros sistemos dalys yra lengviau prižiūrimos ir lengviau testuojamos}
-			\item{silpna sistemos sąsajo - neglaudus sąryšis tarp komponentų bei programų leidžia daryti pakeitimus, kurie nepropaguoja per visą sistemą}
-			\item{nepriklausomas servisų dalis galima atskirai diegti bei atlikti atnaujinimus nediegiant visos sistemos iš naujo}
-			\item{Mažos komandos efektyviau prižiūri sistemą, reikia mažiau komunikacijos}
-			\item{Servisai kuriami pagal įmonės gebėjimus}
-		\end{itemize}
+\begin{enumerate} 
+	\item Pagal gautus reikalavimus programuotojų komanda sumodeliuoja pradinės sistemos implementaciją, pradedama rašyti kodo bazė ant kuriuos ateinančiuose sprintuose bus statoma visa sistema.
+	\item Sukurtas sistemos modelis yra pristatomas klientui, jeigu jį tenkina pasirinkta kryptis, yra pasirašoma sutartis tolimesniam bendradarbiavimui.
+\end{enumerate}
 		
 	\subsection{Sprintas}
 	Sprintu skaitome dvi savaites, kurių pabaigoje yra įvykdytas verslo analitiko ar komandos parinktas užduočių skaičius ir matomas apčiuopiamas rezultatas - veikiantis funkcionalumas. Sprinto ilgis - 2 savaitės - pasirinktas taip, kad nebūtų sunku numatyti ir suplanuoti užduočių tam laiko tarpui ir taip, kad būtų pakankamai laiko jas įvykdyti iki galo. Sprintas turi kelias veiklas, kurios skirtos palaikyti efektyvią programos kūrimo eigą ir užtikrinti, kad rezultatas būtų pasiektas laiku.
@@ -290,7 +271,6 @@
 	Kokybės užtikrinimas skirtingas kiekvienam projektui. Tuose projektuose, kuriuose kuriamoje sistemoje egzistuoja vartotojo sąsaja, atliekamas rankinis testavimas kartu su automatizuotu regresiniu testavimu. Į kokybės užtikrinimą yra įtraukiami ir programuotojai, kurie yra atsakingi už modulių testų rašymą ir klaidų taisymą. Testuotojai atsakingi už rankinį testavimą, automatizuotų testų rašymą bei regresinių testų rezultatų apibendrinimą. Jeigu projektas yra iteracinis ir jau išleistas plačiam naudojimui, po sėkmingo testavimo kodas yra sudedamas į aukštesnę aplinką, kurioje yra papildomai pravaliduojamas prieš jį išleidžiant į produkciją. Jei testavimas parodė defektus - jie užregistruojami kaip užduotys ir jų taisymui, pagal jų sunkumą, skiriamas prioritetas. 
 	\par Ir programuotojai ir testuotojai atsakingi už tvarkingą ir kokybišką kodą ir sklandų programos veikimą. Viena rečiau minima kokybės užtikrinimo dalis yra kodo peržiūra. Kiekvienas programuotojas yra atsakingas už kitų savo rato programuotojų kodo peržiūrą prieš jo kėlimą į aukštesnes aplinkas. Taip išvengiama kartais net labai sunkių klaidų dėl vieno ar kelių žmonių apsižiūrėjimo. Tuo pačiu išvengiama nedarbingo laiko, kuris atsirado dėl kitų programos dalių sulaužančio kodo įdėjimo į pagrindinę ''master'' kodo bazę.
 	\subsubsection{Konfigūracijos valdymas}
-	\subsubsection{Programavimas}
 	\begin{center}
 		\begin{table}[ht]
 		\caption{Konfigūracijos valdymo procesas}
@@ -328,10 +308,10 @@
 	\end{table}
 		\end{center}
 	Komandos efektyvumui labai svarbu aptarti praėjusį sprintą: kas trukdė efektyviam darbui, kas gerai sekės, kokias programavimo veiklas tęsti, kokias nutraukti, kokios komandos nuotaikos ir to priežastys. Šioje veikloje dažniausiai dalyvauja tik komanda, o jos rezultatas - pagal išreikštus pastebėjimus išskirti tobulėjimo punktai, kurių laikomasi būsimame sprinte siekiant geresnės ir greitesnės projekto implementacijos. Tai gali būti aktyvus kažkokių procesų vykdymo trukdžių sprendimas, komunikacija su kitomis komandomis ar klientu dėl iškilusių problemų.
-	\subsubsection{Defekto analizė}
+	\subsubsection{Defekto sprendimas}
 	\begin{center}
 		\begin{table}[ht]
-		\caption{Defekto analizės procesas}
+		\caption{Defekto sprendimo procesas}
 		\begin{tabular}{ | l | l | } 
 		\hline
 		Pavadinimas:         & Defekto analizė                               \\ \hline
