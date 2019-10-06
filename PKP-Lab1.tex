@@ -313,7 +313,27 @@
 	\todo[inline]{Update}
 	Išleidimo stadiją galima skaidyti į 2 skirtingus tipus - galimas naujas projekto išleidimas, kurio metu vartotojui pateikiama nauja sistema, kuri buvo tam tikrą laiką kuriama. Taip pat egzistuoja kitas variantas, kai yra veikianti sistema, kuri yra atnaujinama kas tam tikrą laiką (tai priklauso nuo sprinto ilgi). Išleidimo metu įmonėje yra vykdomi darbuotojų budėjimai, kad sistemai veikiant ne tiksliai pagal planą, sistemos trikdžiai būtų kuo greičiau pašalinti.
 	\subsection{Palaikymas}
-	\todo[inline]{Update}
+	\begin{center}
+		\begin{table}[ht]
+		\caption{Palaikymo procesas}
+		\begin{tabular}{ | l | l | } 
+		\hline
+		Pavadinimas:         & Palaikymas                              \\ \hline
+		Tikslas: 	           & Užtikrinti korektišką sistemos veikimą po sistemos paleidimo\\ \hline
+		Vykdytojai:          & Projektų vadovas, programuotojas, analistas, DevOps specialistas                                \\ \hline
+		Veiklos:             & V1 - Analizuoti kliento pateiktus palaikymo darbus												\\ 
+						             & V2 - Registruoti palaikymo darbus \\ 
+									  & V3 - Perduoti darbus defekto analizės procesui																			 \\ 
+									 \hline
+		Naudojami produktai: & NP1 - Esama sistema \\
+						& NP2 - Sistemos palaikymo sutartis \\
+						& NP3 - Užregistruoto defekto informacija \\
+						& NP4 - Vartotojo užregistruota palaikymo užduotis 																																										 \\ \hline
+		Sukuriami produktai: & SP1 - Defekto aprašymas \\
+					       & SP2 - Palaikymo darbo aprašymas																											\\ \hline
+		\end{tabular}
+	\end{table}
+		\end{center}
 	Palaikymo procesui kuriamas palaikymo planas, susidedantis iš programos paruošimo, problemos identifikavimo bei produkto konfigūracijos valdymo. Problemos identifikavimas vykdomas tikrinant programos validumą, sukuriant problemos sprendinį bei išskiriant resursus modifikacijai įgyvendinti. Proceso patvirtinimas įgyvendinamas gavus patvirtinimą dėl kėtinamų įgyvendinti pakeitimų  iš užklausos autoriaus. Įmonė teikia dviejų tipų palaikymą: taisomąjį bei adaptacinį. Taisomasis palaikymas orientuotas į problemų, atrastų vartotojų arba vartotojų klaidų reportų analizės metu, taisymą. Adaptacinis palaikymas skirtas nūdienos standartų programose palaikymui. Įmonė laikosi „Boehm“ modelio, kuris pasižymi atitinkamai pakeitimų pasiūlymu, patvirtinimu bei įgyvendinimu.
 	\label{img:boehmsModel} 
 
