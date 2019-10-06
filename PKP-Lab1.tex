@@ -250,12 +250,12 @@
 						             & V2 - Priėmimo testų klasifikavimas					 \\
 					 	             & V3 - Priėmimo testavimas 														\\ \hline
 		Naudojami produktai: & NP1 - Verslo reikalavimų dokumentas 																				\\ \hline
-		Sukuriami produktai: & SP1 Priėmimo testų planas 																								\\
+		Sukuriami produktai: & SP1 - Priėmimo testų planas 																								\\
 												 & SP2 - Priėmimo testai																	 \\ \hline
 		\end{tabular}
 	\end{table}
 		\end{center}
-	Priėmimo testavimo procesas vykdomas cikliškai su programavimo procesu kiekviename sprinte. Proceso metu, prieš sukurtos sistemos ar jos dalies pristatymą klientui, tikrinama, ar sukurta sistema atitinka verslo reikalavimus. Įmonė vykdo vidinį priėmimo testavimą, kurį atlieka įmonėje dirbantys, tačiau teisiogiai su projektu, kodavimu ar testavimu nesusiję darbuotojai. Tam tikrais atvejais naujai programos versijai gali būti vykdomas dūmų testas prieš kokybės užtikrinimo procesą. Priėmimo testavimo procesą sudaro priėmimo testavimo planavimas, testų klasifikavimas bei priėmimo testavimas.
+	Priėmimo testavimo procesas vykdomas cikliškai su programavimo procesu kiekviename sprinte. Proceso metu, prieš sukurtos sistemos ar jos dalies pristatymą klientui, tikrinama, ar sukurta sistema atitinka verslo reikalavimus. Įmonė vykdo vidinį priėmimo testavimą, kurį atlieka įmonėje dirbantys, tačiau teisiogiai su projektu, programavimu ar testavimu nesusiję darbuotojai: programuotojui atlikus užduotį analitikas atlieka priėmimo testus. Tam tikrais atvejais naujai programos versijai gali būti vykdomas dūmų testas prieš kokybės užtikrinimo procesą. Priėmimo testavimo procesą sudaro priėmimo testavimo planavimas, testų klasifikavimas bei priėmimo testavimas.
 	\subsubsection{Kokybės užtikrinimas}
 	\todo[inline]{Papildyt aprašymą po lentele, pridėt automated testing.}
 	\begin{center}
@@ -320,8 +320,22 @@
 		\end{center}
 	Defekto analizės procesas pradedamas problemos identifikavimu. Vartotojo arba testuotojo aptikas defektas yra užregistruojamas aprašant sąlygas, reikalingas atkurti defektą, bei priskiriamas atitinkamai defektų klasei. Programuotojas išanalizuoja defektą, suranda defekto priežastį bei apibrėžia ir įgyvendina defektui pašalinti reikalingą veiksmų seką. Įvykdžius šiuos žingsnius belieka įsitikinti, kad procesas atnešė pageidaujamą rezultatą - defektas nurodytomis sąlygomis nepasikartoja.
 	\subsection{Išleidimas}
-	\todo[inline]{Update}
-	Išleidimo stadiją galima skaidyti į 2 skirtingus tipus - galimas naujas projekto išleidimas, kurio metu vartotojui pateikiama nauja sistema, kuri buvo tam tikrą laiką kuriama. Taip pat egzistuoja kitas variantas, kai yra veikianti sistema, kuri yra atnaujinama kas tam tikrą laiką (tai priklauso nuo sprinto ilgi). Išleidimo metu įmonėje yra vykdomi darbuotojų budėjimai, kad sistemai veikiant ne tiksliai pagal planą, sistemos trikdžiai būtų kuo greičiau pašalinti.
+	\begin{center}
+		\begin{table}[ht]
+		\caption{Išleidimo procesas}
+		\begin{tabular}{ | l | l | } 
+		\hline
+		Pavadinimas:         & Išleidimas                             \\ \hline
+		Tikslas: 	           & Išleisti naują sistemos versiją\\ \hline
+		Vykdytojai:          & Programuotojai ir devOps specialistai                                \\ \hline
+		Veiklos:             & V1 - Sistemos išleidimas 													\\ 
+						             & V2 - Sistemos būsenos bei validumo stebėjimas \\ \hline
+		Naudojami produktai: & NP1 - Esama sistema\\ \hline
+		Sukuriami produktai: & SP1 - Išleista sistema																											\\ \hline
+		\end{tabular}
+	\end{table}
+		\end{center}
+	Išleidimo stadiją galima skaidyti į 2 skirtingus tipus - galimas naujas projekto išleidimas, kurio metu vartotojui pateikiama nauja sistema, kuri buvo tam tikrą laiką kuriama. Taip pat galimas variantas, kai egzistuoja veikianti sistema, kuri yra preiodiškai atnaujinama (priklausomai nuo sprinto ilgio). Išleidimo metu įmonėje budi darbuotojų, atsakingi už greutą išleistos sistemos trikdžių pašalinimą.
 	\subsection{Palaikymas}
 	\todo[inline]{Update}
 	Palaikymo procesui kuriamas palaikymo planas, susidedantis iš programos paruošimo, problemos identifikavimo bei produkto konfigūracijos valdymo. Problemos identifikavimas vykdomas tikrinant programos validumą, sukuriant problemos sprendinį bei išskiriant resursus modifikacijai įgyvendinti. Proceso patvirtinimas įgyvendinamas gavus patvirtinimą dėl kėtinamų įgyvendinti pakeitimų  iš užklausos autoriaus. Įmonė teikia dviejų tipų palaikymą: taisomąjį bei adaptacinį. Taisomasis palaikymas orientuotas į problemų, atrastų vartotojų arba vartotojų klaidų reportų analizės metu, taisymą. Adaptacinis palaikymas skirtas nūdienos standartų programose palaikymui. Įmonė laikosi „Boehm“ modelio, kuris pasižymi atitinkamai pakeitimų pasiūlymu, patvirtinimu bei įgyvendinimu.
