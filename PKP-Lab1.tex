@@ -50,7 +50,6 @@
 	Kiekvieno sprinto pradžioje, po reikalavimų pasitikslinimo, yra sudaromi priėmimo testai, kuriuos praėjus kliento prašoma susimokėti už atliktus darbus.
 
 \section{Kūrimo procesas}
-\todo[inline]{Pridėti acceptance testing cikle su programavimu. Iš kokybės užtikrino proceso gali atsirasti naujas defektas.}
 	\begin{figure}[htbp]
 	\includegraphics[scale=0.6]{img/SoftwareProcessMoonTechnologies}
 	\caption{Sistemos kūrimo procesas} % Antraštė įterpiama po paveikslėlio
@@ -246,6 +245,26 @@
 			\item Atlikus užuodoties implementaciją programuotojas iš pradžių rankiniu būdu pratestuoja ar jo sukurtas funkcionalumas veikia tinkamai, o radęs netikslumų juos ištaiso.
 			\item Rankinio testavimo būdu pratestavus funkcionaluma yra rašomi automatiniai testai skirti patikrinti sudėtingesnius scenarijus, bei ateities regresiniam testavimui užtikrinti. Į šiuos testus įeina modulių, aptarnavimo bei integraciniai testai.
 		\end{enumerate}
+	Šis žingsnis glaudžiai susijęs su prieš jį einančiomis fazėmis, jame vykdomas suprojektuotos sistemos dalies įgyvendinimas, kuris apima kodo rašymą, automatizuotų testų kūrimą, konfigūracijos pakeitimus ir duombazės kūrimą. Ši fazė įgyvendinama tik gerai išsiaiškinus ir susidokumentavus reikalavimus ir jau turint prototipą, kad kuriama programa atitiktų kliento lūkesčius ir reikalingų pakeitimų būtų mažiau.
+	\subsubsection{Priėmimo testavimas}
+	\begin{center}
+		\begin{table}[ht]
+		\caption{Priėmimo testavimo procesas}
+		\begin{tabular}{ | l | l | } 
+		\hline
+		Pavadinimas:         & Priėmimo testavimas                                       \\ \hline
+		Tikslas: 	           & Patikrinti ar sistema atitinka verslo reikalavimus \\ \hline
+		Vykdytojai:          & Analistas ir programuotojai                                \\ \hline
+		Veiklos:             & V1 - Priėmimo testavimo planavimas													\\
+						             & V2 - Priėmimo testų klasifikavimas					 \\
+					 	             & V3 - Priėmimo testavimas 														\\ \hline
+		Naudojami produktai: & NP1 - Verslo reikalavimų dokumentas 																				\\ \hline
+		Sukuriami produktai: & SP1 - Priėmimo testų planas 																								\\
+												 & SP2 - Priėmimo testai																	 \\ \hline
+		\end{tabular}
+	\end{table}
+		\end{center}
+	Priėmimo testavimo procesas vykdomas cikliškai su programavimo procesu kiekviename sprinte. Proceso metu, prieš sukurtos sistemos ar jos dalies pristatymą klientui, tikrinama, ar sukurta sistema atitinka verslo reikalavimus. Įmonė vykdo vidinį priėmimo testavimą, kurį atlieka įmonėje dirbantys, tačiau teisiogiai su projektu, programavimu ar testavimu nesusiję darbuotojai: programuotojui atlikus užduotį analitikas atlieka priėmimo testus. Tam tikrais atvejais naujai programos versijai gali būti vykdomas dūmų testas prieš kokybės užtikrinimo procesą. Priėmimo testavimo procesą sudaro priėmimo testavimo planavimas, testų klasifikavimas bei priėmimo testavimas.
 	\subsubsection{Kokybės užtikrinimas}
 	\begin{center}
 		\begin{table}[ht]
@@ -294,7 +313,7 @@
 	\subsubsection{Defekto analizė}
 	\begin{center}
 		\begin{table}[ht]
-		\caption{Defekto analizė}
+		\caption{Defekto analizės procesas}
 		\begin{tabular}{ | l | l | } 
 		\hline
 		Pavadinimas:         & Defekto analizė                               \\ \hline
@@ -311,8 +330,22 @@
 		\end{center}
 	Defekto analizės procesas pradedamas problemos identifikavimu. Vartotojo arba testuotojo aptikas defektas yra užregistruojamas aprašant sąlygas, reikalingas atkurti defektą, bei priskiriamas atitinkamai defektų klasei. Programuotojas išanalizuoja defektą, suranda defekto priežastį bei apibrėžia ir įgyvendina defektui pašalinti reikalingą veiksmų seką. Įvykdžius šiuos žingsnius belieka įsitikinti, kad procesas atnešė pageidaujamą rezultatą - defektas nurodytomis sąlygomis nepasikartoja.
 	\subsection{Išleidimas}
-	\todo[inline]{Update}
-	Išleidimo stadiją galima skaidyti į 2 skirtingus tipus - galimas naujas projekto išleidimas, kurio metu vartotojui pateikiama nauja sistema, kuri buvo tam tikrą laiką kuriama. Taip pat egzistuoja kitas variantas, kai yra veikianti sistema, kuri yra atnaujinama kas tam tikrą laiką (tai priklauso nuo sprinto ilgi). Išleidimo metu įmonėje yra vykdomi darbuotojų budėjimai, kad sistemai veikiant ne tiksliai pagal planą, sistemos trikdžiai būtų kuo greičiau pašalinti.
+	\begin{center}
+		\begin{table}[ht]
+		\caption{Išleidimo procesas}
+		\begin{tabular}{ | l | l | } 
+		\hline
+		Pavadinimas:         & Išleidimas                             \\ \hline
+		Tikslas: 	           & Išleisti naują sistemos versiją\\ \hline
+		Vykdytojai:          & Programuotojai ir devOps specialistai                                \\ \hline
+		Veiklos:             & V1 - Sistemos išleidimas 													\\ 
+						             & V2 - Sistemos būsenos bei validumo stebėjimas \\ \hline
+		Naudojami produktai: & NP1 - Esama sistema\\ \hline
+		Sukuriami produktai: & SP1 - Išleista sistema																											\\ \hline
+		\end{tabular}
+	\end{table}
+		\end{center}
+	Išleidimo stadiją galima skaidyti į 2 skirtingus tipus - galimas naujas projekto išleidimas, kurio metu vartotojui pateikiama nauja sistema, kuri buvo tam tikrą laiką kuriama. Taip pat galimas variantas, kai egzistuoja veikianti sistema, kuri yra preiodiškai atnaujinama (priklausomai nuo sprinto ilgio). Išleidimo metu įmonėje budi darbuotojų, atsakingi už greutą išleistos sistemos trikdžių pašalinimą.
 	\subsection{Palaikymas}
 	\begin{center}
 		\begin{table}[ht]
