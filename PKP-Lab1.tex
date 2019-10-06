@@ -110,18 +110,8 @@
 	\item{Nutariama dėl technologinių alternatyvų - jeigu įmanoma klientui pasiūloma atviro kodo technologiniai sprendimai siekiant sutaupyti pinigų. 
 		Pateikiamas palyginimas tarp dabartinės sistemos technologijos, siūlomos technologijos ir atviro kodo technologijos sprendimų. }
 \end{enumerate}
-	
-
-
-
-
-
-
-
-
 
 	\subsection{Reikalavimų ciklas}
-	
 		\begin{center}
 			\begin{table}[ht]
 				\caption{Reikalavimų ciklo procesas.}
@@ -209,8 +199,6 @@
 	\item Atlikus pradinį aptarimą kartu su analistu arba verslo atstovu rengiama diskusija tarp programuotojų, kuriame kiekviena užduotis yra įvertinama taškais, vertinama fibonačio sekos skaičiais, o skaičiaus reikšmė yra viena programuotojo darbo diena. Šioje diskusijoje programuotojai diskutuoja apie galimą kiekvienos užduoties implementaciją, bei jos sudėtingumą, tada balsuojama dėl šiai užduočiai skiriamo balų skaičiaus. Taip aptariamos visos dar neįvertintos užduodys, tuo atvėju, jeigu gilinantis į implementaciją atsiranda neaiškumų dėl dalykinės srities, užduotis yra blokuojama paliekant komentarą, kad jį radęs analistas galėtų patikslinti užduotį.
 	\item Atlikus užduočių vertinimą analistas arba verslo atstovas sudeda sekančio sprinto struktūra pagal galimą talpą (talpa lygi programuotojų skaičiui padauginta iš 8). 
 \end{enumerate}
-\todo[inline]{Ką darom su šitu tekstu? Tekstas gražus, bet nežinau kaip įkomponuot.}
-	Tai viena svarbiausių fazių, kadangi jos kokybiškas įvykdymas padeda pagrindą visam spintui -  jei reikalavimai netikslūs ar užduotys prastai aprašytos ir jų sudėtingumas atmestinai įvertintas - sprintas pasmerktas nesusipratimams ir laiko gaišimui aiškinantis, koks sprinto tikslas ir koks jo sėkmingo baigimo vertinimas. Sprinto reikalavimų tikslinime ir vertinime dalyvauja komanda ir verslo analitikas. Verslo analitikas pateikia reikalavimus ir išskirtas užduotis, kartu su komanda tikslina priėmimo kriterijus tol, kol susidaro pilnos užduotys su tiksliais užduoties sėkmingo įvykdymo reikalavimais ir klausimais klientui jei iškyla neaiškumų. Komanda taip pat įvertina aptariamų užduočių sudėtingumą ir kartu su verslo analitiku nusprendžia, kokias ir kiek užduočių įdėti į sekantį sprintą.
 	\subsubsection{Užduočių analizė}
 	\begin{center}
 		\begin{table}[ht]
@@ -236,7 +224,29 @@
 	\par Jei analizė reikalinga mažesniu mastu, bet dar negalima iškart imti ir programuoti - asmeniškai, jau pasiėmus užduotį, aiškinamasi, kokių žinių trūksta ir kas jas galėtų suteikti. Tai gali būt pasikalbėjimas su kolegomis ar panašių užduočių implementacijos pavyzdžių ieškojimas. Šios veiklos pabaigoje jau galima pradėti progamuoti.
 	\subsubsection{Programavimas}
 	\todo[inline]{Update}
-	Šis žingsnis glaudžiai susijęs su prieš jį einančiomis fazėmis, jame vykdomas suprojektuotos sistemos dalies įgyvendinimas, kuris apima kodo rašymą, automatizuotų testų kūrimą, konfigūracijos pakeitimus ir duombazės kūrimą. Ši fazė įgyvendinama tik gerai išsiaiškinus ir susidokumentavus reikalavimus ir jau turint prototipą, kad kuriama programa atitiktų kliento lūkesčius ir reikalingų pakeitimų būtų mažiau.
+	\begin{center}
+		\begin{table}[ht]
+		\caption{Programavimo procesas}
+		\begin{tabular}{ | l | l | } 
+		\hline
+		Pavadinimas:         & Programavimas.                      \\ \hline
+		Tikslas: 	           & Suprogramuoti sprinto užduotis.      \\ \hline
+		Vykdytojai:          & Programuotojai.                       \\ \hline
+		Veiklos:             & V1 - Kodo rašymas. 									  \\
+						             & V2 - Rankinis testavimas. 							 \\
+					 	             & V3 - Automatinių testų rašymas. 					\\ \hline
+		Naudojami produktai: & NP1 - Užduočių aprašymas.								 \\ \hline
+		Sukuriami produktai: & SP1 - Užduoties kodas. 							  		\\
+												 & SP2 - Modulių testai. 											 \\
+												 & SP3 - Integraciniai testai. 									\\ \hline
+		\end{tabular}
+	\end{table}
+		\end{center}
+		\begin{enumerate}
+			\item Atlikus užduočių analizę ir išsiaiškinus kodo implementacijos kryptį, pradedama rašyti užduoties implementacija. Atlikus implementaciją kodas yra peržiūrymas komandus narių, bet pagal jų rekomendacijas pamodifikuojamas.
+			\item Atlikus užuodoties implementaciją programuotojas iš pradžių rankiniu būdu pratestuoja ar jo sukurtas funkcionalumas veikia tinkamai, o radęs netikslumų juos ištaiso.
+			\item Rankinio testavimo būdu pratestavus funkcionaluma yra rašomi automatiniai testai skirti patikrinti sudėtingesnius scenarijus, bei ateities regresiniam testavimui užtikrinti. Į šiuos testus įeina modulių, aptarnavimo bei integraciniai testai.
+		\end{enumerate}
 	\subsubsection{Kokybės užtikrinimas}
 	\todo[inline]{Papildyt aprašymą po lentele, pridėt automated testing.}
 	\begin{center}
@@ -251,11 +261,10 @@
 						             & V2 - Testų klaidų analizė ir defektų sūkurimas. 								 \\
 					 	             & V3 - Testų rezultatų apibendrinimas. 														\\ 
 						    				 & V4 - Performance testavimas. 																		 \\ \hline
-		Naudojami produktai: & NP1 - Integraciniai testai. 																				\\
-												 & NP2 - ?																													 \\ \hline
+		Naudojami produktai: & NP1 - Integraciniai testai. 																				\\ \hline
 		Sukuriami produktai: & SP1 - Nauji defektai. 																								\\
-												 & SP2 - Testų rezultatų dokumentas 																	 \\
-												 & SP3 - Performance analizės dokumentas. 															\\ \hline
+												 & SP2 - Testų rezultatų dokumentas 																	   \\
+												 & SP3 - Performance analizės dokumentas. 														   	\\ \hline
 		\end{tabular}
 	\end{table}
 		\end{center}
@@ -310,7 +319,6 @@
 
 	\subsection{Balius/Post-mortem}
 	Procesas užbaigiamas komandos bei prie projekto prisidėjusių žmonių švente, kurioje aptariamas bei įvertinamas proceso pasisekimas ir daromos išvados.
-
 \sectionnonum{Žodynėlis}
 	\begin{itemize}
 		\item{Klientas}
