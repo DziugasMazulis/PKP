@@ -1,0 +1,41 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Įvadas}{2}{section*.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.}Kūrimo procesas}{3}{section.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.}Projekto siūlymas}{4}{subsection.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.}Technologinio sprendimo paieška ir įgyvendinimas}{4}{subsection.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.}Reikalavimų ciklas}{5}{subsection.1.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.}Sistemos modeliavimas}{6}{subsection.1.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.}Sprintas}{6}{subsection.1.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.5.1.}Sprinto užduočių tikslinimas ir vertinimas}{6}{subsubsection.1.5.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.5.2.}Užduočių analizė}{7}{subsubsection.1.5.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.5.3.}Programavimas}{8}{subsubsection.1.5.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.5.4.}Priėmimo testavimas}{8}{subsubsection.1.5.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.5.5.}Kokybės užtikrinimas}{9}{subsubsection.1.5.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.5.6.}Konfigūracijos valdymas}{10}{subsubsection.1.5.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.5.7.}Sprinto aptarimas}{10}{subsubsection.1.5.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.5.8.}Defekto sprendimas}{11}{subsubsection.1.5.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.6.}Išleidimas}{11}{subsection.1.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.7.}Palaikymas}{12}{subsection.1.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8.}Balius/Post-mortem}{12}{subsection.1.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Žodynėlis}{13}{section*.18}% 

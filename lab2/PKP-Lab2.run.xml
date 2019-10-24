@@ -44,20 +44,21 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>PKP-Lab1.bcf</file>
+      <file>PKP-Lab2.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>PKP-Lab1.bbl</file>
+      <file>PKP-Lab2.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
+      <file>blx-unicode.def</file>
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
-      <file>trad-alpha.bbx</file>
-      <file>trad-standard.bbx</file>
       <file>standard.bbx</file>
-      <file>trad-alpha.cbx</file>
+      <file>trad-standard.bbx</file>
+      <file>trad-alpha.bbx</file>
       <file>alphabetic.cbx</file>
+      <file>trad-alpha.cbx</file>
       <file>biblatex.cfg</file>
       <file>english.lbx</file>
       <file>lithuanian.lbx</file>
@@ -67,19 +68,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>PKP-Lab1</infile>
+      <infile>PKP-Lab2</infile>
     </cmdline>
     <input>
-      <file>PKP-Lab1.bcf</file>
+      <file>PKP-Lab2.bcf</file>
     </input>
     <output>
-      <file>PKP-Lab1.bbl</file>
+      <file>PKP-Lab2.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>PKP-Lab1.bbl</file>
+      <file>PKP-Lab2.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>PKP-Lab1.bcf</file>
+      <file>PKP-Lab2.bcf</file>
     </requires>
     <requires type="editable">
       <file>bibliografija.bib</file>
