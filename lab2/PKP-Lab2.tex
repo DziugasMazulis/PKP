@@ -15,6 +15,7 @@
 \usepackage{wrapfig}
 \usepackage[hidelinks]{hyperref}
 \usepackage{todonotes}
+\usepackage{xcolor}
 
 % Titulinio aprašas
 \university{Vilniaus universitetas}
@@ -41,8 +42,8 @@
 
 \sectionnonum{Įvadas}
 	Šiame dokumente aprašysime dabartinio ,,Mėnuliukų technologijos" įmonės programų kūrimo proceso pagerinimą. 
-	Dabar nei vienas iš aprašytų procesų nepasiekia pirmo lygio.
-	Šiuo darbu sieksime, kad po proceso pagerinimo trys procesai pasiektų pirmą PKP brandos lygį.
+	Dabar nei vienas iš procesų  nepasiekia pilno pirmo lygio.
+	Šiuo darbu sieksime, kad po proceso pagerinimo trys procesai pasiektų pilną pirmą PKP brandos lygį.
 	\begin{figure}[htbp]
 		\includegraphics[scale=1]{img/ProcPries}
 		\caption{PKP brandra prieš pagerinimą} % Antraštė įterpiama po paveikslėlio
@@ -75,7 +76,53 @@
 		\caption{PKP brandra prieš pagerinimą} % Antraštė įterpiama po paveikslėlio
 		\label{img:pkpPries}
 	\end{figure}
+\subsubsection{Proceso aprašymas po pagerinimo}
+\begin{center}
+	\begin{table}[ht]
+		\caption{Reikalavimų ciklo procesas.}
+		\begin{tabular}{ | l | l | }
+			\hline
+			Pavadinimas:		& Reikalavimų ciklas.												\\ \hline
+			Tikslas:		& Suformuoti funkcinius ir nefunkcinius reikalavimus.								\\ \hline
+			Vykdytojai:		& Programuotojas, analistas, klientas.										\\ \hline
+			Veiklos:		& V1 - Iš kliento pateiktų verslo reikalavimų suformuojame funkcinius \\ & reikalavimus. 			\\
 
+						& V2 - Pristatome klientui sudarytus funkcinius reikalavimus ir tiksliname \\& pateiktus verslo reikalavimus.	\\
+						& V3 - Siūlomi nefunkciniai reikalavimai.									\\ \hline
+			Naudojami produktai:	& NP1 - Kliento pateiktas verslo reikalavimų dokumentas.							\\ \hline
+			Sukuriami produktai:	& SP1 - Funkcinių ir nefunkcinių reikalavimų dokumentas.							\\ \hline
+						& SP2 - Susaistytų šalių parašai reikalavimam patvirtinti.							\\ \hline
+		\end{tabular}
+	\end{table}
+\end{center}
+
+\begin{enumerate}
+	\item{
+		Iš užsakovo ir naudotojų pateiktų verslo reikalavimų suformuojame funkcinius ir nefunkcinius reikalavimus.
+		Su visom partijom, įskaitant užsakovus ir naudotojus, susėdama, aptariami reikalavimai ir taip suderinami, kad visos susaistytos šalys būtų patenkintos.
+		Iš visų partijų surenkami parašai, tam kad vėliau nekiltų klausimų, kodėl reikalavimai neatitinka įsivaizdavimų.
+		Mūsų įmonės verslo analitikas dirbdamas kartu su programuotojais suformuoja atsekamus (su indentifikacijos kodu) funkcinius ir nefunkcinius reikalavimus.
+	}
+	\item{
+		Kompanija pateikia prieigą prie sistemos, su visu reikalavimų sąrašu, kur užsakovai gali stebėti jų įvykdymą.
+		Testuojant suprogramuotą funkcionalumą ir įgyvendinus reikalavimą, sistemoje pažymimas jog reikalavimas įgyvendintas.
+	}
+	\item{
+		Išsiaiškinami baziniai reikalavimai, kurie yra patys svarbiausi ir turi būti pirmi igyvendinti, baziniai reikalavimai yra atitinkamai pažymimi sistemoje.
+		Baziniai reikalavimai yra ypač atidžiai analizuojami analistų, analizėje taip pat įvertinama, kokia tikimybė, jog pasikeis reikalavimas ir atitinkamai suplanuojami veiksmai tokiu atveju.
+	}
+	\item{
+		Pristatome klientui sudarytus funkcinius reikalavimus ir tiksliname pateiktus verslo reikalavimus - suformavus funkcinius reikalavimus planuojami susitikimai su klientu, siekiant jam pristatyti suformuotus reikalavimus, patikslinti pateiktus verslo reikalavimus ir toliau tikslinti reikalavimus iki kol reikalavimai tenkins klientą ir bus suprantami programuotojų komandai, kuri dirbs prie kliento projekto.
+	}
+	\item{
+		Siūlomi nefunkciniai reikalavimai - jeigu klientas pats nepateikė nefunkcinių reikalavimų įmonė pati pateikia nefunkcinių reikalavimų siūlymus pagal esamo projekto apimtį ir biudžetą.
+		Pateikti nefunkciniai reikalavimai yra aptariami ir tikslinami su klientu.
+	}
+	\item{
+		Jeigu klientas reikalavimą pakeičia programavimo fazėje tai reikalavimas yra atidžiai peržiūrimas dar kartą, įvertinama, kiek kitokio funkcionalumo reikės pakeisti kuriamoj programų sistemoje, ir klientui pateikiama nauja sutartis, kurioje aprašoma, kokie darbai bus atlikti tam, kad jau suprogramuotoje sistemoje pakeistas reikalavimas būtų įgyvendintas.
+		Dar neįgyvendintų reikalavimų keitimas yra pigesnis (nes nereikia perprogramuoti nieko) ir klientui aiškiai išdėstoma kainos struktūra, kiek nauja sutartis kainuos, jeigu būs keičiami reikalavimai, kurie jau įgyvendinti.
+	}
+\end{enumerate}
 \section{Programinės įrangos testavimo (ENG 8) proceso pagerinimas}	
 	Kadangi labai svarbus klientų pasitikėjimas mūsų produkto kokybe, pasirinkome gerinti programinės įrangos testavimo procesą. Testuodami norime užtikrinti, kad perdavus klientui produktą neatsiras kalnas problemų ir jis veiks visose aplinkose, kuriose turi veikti.
 	\subsection{Pagerinimas}
@@ -86,6 +133,44 @@
 						\item Paminėta, kad sudaryti testai padengia visus su testuojama užduotim susijusius reikalavimus.
 	\end{enumerate}
 	Pagrinde, ką reikėjo padaryti, kad pagerinti procesą, tai papildyti ir detaliau aprašyti dokumentaciją - testai tie patys: modulių, integraciniai, automatizuojami, regresiniai testai, bet aiškiau aprašyta, kokio rezultato po testavimo tikimasi.
+	\subsubsection{Proceso aprašymas po pagerinimo}
+	\begin{center}
+		\begin{table}[ht]
+			\caption{Kokybės užtikrinimo procesas}
+			\begin{tabular}{ | l | l | }
+				\hline
+				Pavadinimas:		& Kokybės užtikrinimas.							\\ \hline
+				Tikslas:		& Pasirūpinti, kad sistema su atnaujinta kodo baze veiktų teisingai.	\\ \hline
+				Vykdytojai:		& Testuotojai ir programuotojai.					\\ \hline
+				Veiklos:		& V1 - Rašomi modulių testai.						\\
+							& V2 - Rašomi integraciniai testai.					\\
+							& V3 - Rašomi automatizuojami testai.					\\
+							& V4 - Vykdomas regresinis testavimas.					\\
+							& V5 - Testų klaidų analizė ir defektų aprašymas.			\\ \hline
+				Naudojami produktai:	& NP1 - Užduočių sąrašas. 						\\
+							& NP2 - Testai regresiniam testavimui.					\\ \hline
+				Sukuriami produktai:	& SP1 - Nauji defektai.							\\
+							& SP2 - Testų rezultatų dokumentas.					\\
+							& SP3 - Papildytas naujais defektais užduočių sąrašas.			\\ 
+							& SP4 - Vartotojo dokumentacija. \\ \hline
+			\end{tabular}
+		\end{table}
+	\end{center}
+
+	Kokybės užtikrinimas skirtingas kiekvienam projektui.
+	Tuose projektuose, kuriuose kuriamoje sistemoje egzistuoja vartotojo sąsaja, atliekamas rankinis testavimas kartu su automatizuotu regresiniu testavimu. Kiekvienas testas apibrėžia pradinius duomenis ir tikrina rezultatus. Šie sudaryti testai turi padengti visus užduoties bei programinės įrangos reikalavimus ir užtikrinti, kad rezultatai atitinka užduoties aprašymą bei nesugriauna kitų programos dalių.
+	Į kokybės užtikrinimą yra įtraukiami ir programuotojai, kurie yra atsakingi už modulių testų rašymą ir klaidų taisymą.
+	Testuotojai atsakingi už rankinį testavimą, automatizuotų testų rašymą bei regresinių testų rezultatų apibendrinimą.
+	Jeigu projektas yra iteracinis ir jau išleistas plačiam naudojimui, po sėkmingo testavimo kodas yra sudedamas į aukštesnę aplinką, kurioje yra papildomai pravaliduojamas prieš jį išleidžiant į produkciją.
+	Jei testavimas parodė defektus - jie užregistruojami kaip užduotys ir jų taisymui, pagal jų sunkumą, skiriamas prioritetas. 
+Atlikus testavimus, jei vartotojo dokumentacija dar neparašyta vartotojo dokumentacija, ji parašoma implementuotom užduotim, o jei jos nėra, ji atnaujinama.
+	\par
+	Ir programuotojai ir testuotojai atsakingi už tvarkingą ir kokybišką kodą ir sklandų programos veikimą.
+	Viena rečiau minima kokybės užtikrinimo dalis yra kodo peržiūra.
+	Kiekvienas programuotojas yra atsakingas už kitų savo rato programuotojų kodo peržiūrą (angl. Pull Request review) prieš jo kėlimą į aukštesnes aplinkas.
+	Taip išvengiama kartais net labai sunkių klaidų dėl vieno ar kelių žmonių apsižiūrėjimo.
+	Tuo pačiu išvengiama nedarbingo laiko, kuris atsirado dėl kitų programos dalių sulaužančio kodo įdėjimo į pagrindinę ''master'' kodo bazę.
+
 	\newpage
 	
 	\subsection{NPLF atitikimas po pagerinimo}
@@ -115,6 +200,7 @@
 
 				Jeigu projekto vadovas mato, kad pačio projekto vykdymo metu būtinas proceso pakeitimas, yra daromas susirinkimas su kompanijos savininkais ir suinteresuotais asmenimis siekiant spręsti šį klausimą. 
 				Jeigu reikia, proceso modelio gerinimo procesas yra pradedamas anksčiau ir modelio pakeitimai yra įgyvendinami kaip galima greičiau.
+
 \pagebreak
 	\begin{center}
 		\begin{table}[ht]
@@ -174,7 +260,7 @@
 		\label{img:pkpPries}
 	\end{figure}
 
-	Po procesų pagerinimo pavyko sėkmingai pakelti tris procesus iki pirmo PKP brandos lygio. 
+	Po procesų pagerinimo pavyko sėkmingai pakelti tris procesus iki pilno pirmo PKP brandos lygio. 
 	Išsiaiškinom ir supratom, kad net ir nedideli bet tikslingi pakeitimai procese padaro daug teigiamos įtakos kokybei. 
 
 \end{document}
