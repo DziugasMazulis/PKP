@@ -460,6 +460,54 @@ Atlikus testavimus, jei vartotojo dokumentacija dar neparašyta vartotojo dokume
 
 	\subsection{Balius/Post-mortem}
 	Procesas užbaigiamas komandos bei prie projekto prisidėjusių žmonių švente, kurioje aptariamas bei įvertinamas proceso pasisekimas ir daromos išvados.
+
+	\subsection{Proceso gerinimo procesas}
+		Įvedamos procesų gerinimo metrikos.
+		Pradėjus naują projektą kiekvieno proceso metu projektų vadomas žymisi kiek metrikas apie procesą.
+			\begin{enumerate}
+				\item{Proceso unikalus indikatorius(kiekvienam projektui skirtingas)}
+				\item{Kokia buvo numatyta proceso trukmė}
+				\item{Kiek laiko truko procesas}
+				\item{Ar visos numatytos šalys dalyvavo projekte}
+				\item{Kiek proceso veiklų buvo įgyvendinta}
+				\item{Proceso kaina}
+				\item{Atsiliepimai apie procesą}
+			\end{enumerate}
+		Pagal šia metrikas projekto pabaigoje, per projekto aptarimą yra vykdomas pačio proceso aptarimas ir, jeigu to reikia, gerinimas.
+
+				Jeigu projekto vadomas mato, kad pačio projekto vykdymo metu būtinas proceso pakeitimas yra daromas susirinkimas su kompanijos savininkais ir suinteresuotais asmenimis siekiant spręsti šį klausimą. 
+				Jeigu reikia proceso modelio gerinimo procesas yra pradedamas ankščiau ir modelio pakeitimai yra įgyvendinami kaip galima greičiau.
+	\begin{center}
+		\begin{table}[ht]
+			\caption{Programų kūrimo proceso gerinimo procesas}
+			\begin{tabular}{ | l | l | }
+				\hline
+				Pavadinimas:		& Proceso gerinimas.						\\ \hline
+				Tikslas:		& Aptarti praėjusio projekto programų kūrimo procesą ir pagerinti jį.			\\ \hline
+				Vykdytojai:		& Įmonės darbuotojai dirbę prie projekto ir įmonės vadovybė.					\\ \hline
+				Veiklos:		& V1 - Aptarimas kiekvienas modelio procesas. 				\\
+							& V2 - Apžvelgiamos metrikos.	\\
+							& V3 - Surašomi gerinimo pasiūlymai.				\\ 
+							& V4 - Atliekama proceso gerinimo atsiperkamumo analizė \\ 
+							& V5 - Sudaromas naujas programų sistemų kūrimo modelis \\ \hline
+				Naudojami produktai:	& NP1 - Proceso gerinimo metrikos. 				\\ \hline
+				Sukuriami produktai:	& SP1 - Pagerintas programų kūrimo proceso modelis.		\\ \hline
+			\end{tabular}
+		\end{table}
+	\end{center}
+
+	\begin{enumerate}
+		\item{Bendrais bruožais aptariamas kiekvienas modelio procesas, kokia komandos nuomonė kaip sekėsi sekti proceso nurodymais jų pačių akimis ir ar procesas jiems padėjo.}
+		\item{Apžvelgiamos metrikos ir kaip jos atsispindi tame, kas buvo kalbama pirmoje veikloje. 
+			Išsiaiškinama kodėl nebuvo sekta procesu, kodėl jis užtruko ilgiau arba trumpiau negu planuota ir kodėl buvo sunaudotą daugiau arba mažiau pinigų negu planuota.}
+		\item{Kiekvienas susirinkimo dalyvis anonimiškai surašo savo pasiūlymus kaip gerinti procesą.
+			Pasiūlymai peržiūrini susitinkimo dalyvių ir iškeliama diskusija trumpai aptariant visus nesidubliuojančius pasiūlymus.}
+		\item{Pagal atrinktus pasiūlymus ir vadovybės išskirtas proceso gerinimo tikslus įvertinamas kiek kiekviena gerinimo veikla kainuos implementuoti į modelį ir koks bus trumpalaikis ir ilgalaikis veikos atsiperkamumas}
+		\item{Atmetus nereikalingas tiklus sukuriamas naujas programų sistemos kūrimos proceso modelis, kuriuo bus vadovaujamasi kituose projektuose.}
+	\end{enumerate}
+
+	Pastaba: jeigu modeliui pasikeitus projektas vis dar vyksta ir pakeitimai nėra kritiniai, liekama prie senos modelio versijos siekiant negluminti užsakovo.	
+
 \sectionnonum{Žodynėlis}
 	\begin{itemize}
 		\item{Klientas - žmogus arba žmonių grupė, kuri nusipirko programavimo paslaugas iš mūsų įmonės.}
