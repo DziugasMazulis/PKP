@@ -142,9 +142,12 @@
 
 	\begin{enumerate}
 		\item{
-			Iš užsakovo ir naudotojų pateiktų verslo reikalavimų suformuojame funkcinius reikalavimus.
+			Iš užsakovo ir naudotojų pateiktų verslo reikalavimų suformuojame funkcinius ir nefunkcinius reikalavimus.
 			Su visom partijom, įskaitant užsakovus ir naudotojus, susėdama, aptariami reikalavimai ir taip suderinami, kad visos susaistytos šalys būtų patenkintos.
 			Iš visų partijų surenkami parašai, tam kad vėliau nekiltų klausimų, kodėl reikalavimai neatitinka įsivaizdavimų.
+			Taip pat išsiaikšinami baziniai reikalavimai, kurie yra patys svarbiausi yra turi būti pirmi igyvendinti, baziniai reikalavimai yra atitinkamai pažymimi.
+			Kompanija pateikia prieeigą prie sistemos, su visu reikalavimų sąrašu, kur užsakovai gali stebėti jų įvykdymą.
+			Programuotojai įgyvendinus reikalavimą pažymį sistemoje jos įgyvendinimą.
 			Mūsų įmonės verslo analitikas dirbdamas kartu su programuotojais suformuoja atsekamus (su indentifikacijos kodu) funkcinius ir nefunkcinius reikalavimus.
 		}
 		\item{Pristatome klientui sudarytus funkcinius reikalavimus ir tiksliname pateiktus verslo reikalavimus - suformavus funkcinius reikalavimus planuojami susitikimai su klientu, siekiant jam pristatyti suformuotus reikalavimus, patikslinti pateiktus verslo reikalavimus ir toliau tikslinti reikalavimus iki kol reikalavimai tenkis klientą ir bus suprantami programuotojų komandai, kuri dirbs prie kliento projekto.}
@@ -296,6 +299,7 @@
 	Įmonė vykdo vidinį priėmimo testavimą, kurį atlieka įmonėje dirbantys, tačiau teisiogiai su projektu, programavimu ar testavimu nesusiję darbuotojai: programuotojui atlikus užduotį analitikas atlieka priėmimo testus.
 	Tam tikrais atvejais naujai programos versijai gali būti vykdomas dūmų testas prieš kokybės užtikrinimo procesą.
 	Priėmimo testavimo procesą sudaro priėmimo testavimo planavimas, testų klasifikavimas bei priėmimo testavimas.
+	Praėjus testui, kuris patestuoja reikalavimų funkcionalumą, reikalavimų sistemoje reikalavimas pažymimas kaip įgyvendintas, užsakovas gali pasižiūrėti tiksliai kada ir kaip įgyvendintas reikalavimas.:w
 	\subsubsection{Kokybės užtikrinimas}
 	\begin{center}
 		\begin{table}[ht]
@@ -398,8 +402,12 @@ Atlikus testavimus, jei vartotojo dokumentacija dar neparašyta vartotojo dokume
 		\end{table}
 	\end{center}
 	\begin{enumerate}
-		\item Gavus defektą programuotojas pagal pateiktus žingsnius pakartoją defektą (jeigu jo pakartoti nepavyksta, jis grąžinamas atgal), bei išanalizuoja to defekto priežastis bei galimą sprendimą.
-		\item Suradus sprendimą defektas yra pašalinamas, jeigu reikia papildomi automatiniai testai, kurie patikrina funkcionalumo atvejį, kuriame buvo gautas defektas.
+		\item{
+			Defekto aprašymas pateikiamias ir sulyginamas su reikalavimų dokumentu, nustatoma ar tikrai defektas yra validus.
+			Gavus defektą programuotojas pagal pateiktus žingsnius pakartoją defektą (jeigu jo pakartoti nepavyksta, jis grąžinamas atgal), bei išanalizuoja to defekto priežastis bei galimą sprendimą.}
+		\item{
+			Suradus sprendimą defektas yra pašalinamas, jeigu reikia papildomi automatiniai testai, kurie patikrina funkcionalumo atvejį, kuriame buvo gautas defektas.
+		}
 	\end{enumerate}
 
 	\subsection{Išleidimas}
