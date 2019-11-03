@@ -99,65 +99,66 @@
 		\item{Aiškiau aprašomas defekto analizės procesas.}
 		\item{Pridėtas reikalavimų stebėjimo mechanizmas naudojant programinę sistemą, ne vien naudojamasi dokumentais.}
 	\end{enumerate}
-
-	\begin{figure}[!htbp]
+	\subsubsection{Proceso aprašymas po pagerinimo}
+	\begin{center}
+		\begin{table}[ht]
+			\caption{Reikalavimų ciklo procesas.}
+			\begin{tabular}{ | l | l | }
+				\hline
+				Pavadinimas:		& Reikalavimų ciklas.												\\ \hline
+				Tikslas:		& Suformuoti funkcinius ir nefunkcinius reikalavimus.								\\ \hline
+				Vykdytojai:		& Programuotojas, analistas, klientas.										\\ \hline
+				Veiklos:		& V1 - Iš kliento pateiktų verslo reikalavimų suformuojame funkcinius \\ & reikalavimus. 			\\
+	
+							& V2 - Pristatome klientui sudarytus funkcinius reikalavimus ir tiksliname \\& pateiktus verslo reikalavimus.	\\
+							& V3 - Siūlomi nefunkciniai reikalavimai.									\\ \hline
+				Naudojami produktai:	& NP1 - Kliento pateiktas verslo reikalavimų dokumentas.							\\ \hline
+				Sukuriami produktai:	& SP1 - Funkcinių ir nefunkcinių reikalavimų dokumentas.							\\ \hline
+							& SP2 - Susaistytų šalių parašai reikalavimam patvirtinti.							\\ \hline
+			\end{tabular}
+		\end{table}
+	\end{center}
+	
+	\begin{enumerate}
+		\item{
+			Iš užsakovo ir naudotojų pateiktų verslo reikalavimų suformuojame funkcinius ir nefunkcinius reikalavimus.
+			Su visom partijom, įskaitant užsakovus ir naudotojus, susėdama, aptariami reikalavimai ir taip suderinami, kad visos susaistytos šalys būtų patenkintos.
+			Iš visų partijų surenkami parašai, tam kad vėliau nekiltų klausimų, kodėl reikalavimai neatitinka įsivaizdavimų.
+			Mūsų įmonės verslo analitikas dirbdamas kartu su programuotojais suformuoja atsekamus (su indentifikacijos kodu) funkcinius ir nefunkcinius reikalavimus.
+		}
+		\item{
+			Kompanija pateikia prieigą prie sistemos, su visu reikalavimų sąrašu, kur užsakovai gali stebėti jų įvykdymą.
+			Testuojant suprogramuotą funkcionalumą ir įgyvendinus reikalavimą, sistemoje pažymimas jog reikalavimas įgyvendintas.
+		}
+		\item{
+			Išsiaiškinami baziniai reikalavimai, kurie yra patys svarbiausi ir turi būti pirmi igyvendinti, baziniai reikalavimai yra atitinkamai pažymimi sistemoje.
+			Baziniai reikalavimai yra ypač atidžiai analizuojami analistų, analizėje taip pat įvertinama, kokia tikimybė, jog pasikeis reikalavimas ir atitinkamai suplanuojami veiksmai tokiu atveju.
+		}
+		\item{
+			Pristatome klientui sudarytus funkcinius reikalavimus ir tiksliname pateiktus verslo reikalavimus - suformavus funkcinius reikalavimus planuojami susitikimai su klientu, siekiant jam pristatyti suformuotus reikalavimus, patikslinti pateiktus verslo reikalavimus ir toliau tikslinti reikalavimus iki kol reikalavimai tenkins klientą ir bus suprantami programuotojų komandai, kuri dirbs prie kliento projekto.
+		}
+		\item{
+			Siūlomi nefunkciniai reikalavimai - jeigu klientas pats nepateikė nefunkcinių reikalavimų įmonė pati pateikia nefunkcinių reikalavimų siūlymus pagal esamo projekto apimtį ir biudžetą.
+			Pateikti nefunkciniai reikalavimai yra aptariami ir tikslinami su klientu.
+		}
+		\item{
+			Jeigu klientas reikalavimą pakeičia programavimo fazėje tai reikalavimas yra atidžiai peržiūrimas dar kartą, įvertinama, kiek kitokio funkcionalumo reikės pakeisti kuriamoj programų sistemoje, ir klientui pateikiama nauja sutartis, kurioje aprašoma, kokie darbai bus atlikti tam, kad jau suprogramuotoje sistemoje pakeistas reikalavimas būtų įgyvendintas.
+			Dar neįgyvendintų reikalavimų keitimas yra pigesnis (nes nereikia perprogramuoti nieko) ir klientui aiškiai išdėstoma kainos struktūra, kiek nauja sutartis kainuos, jeigu būs keičiami reikalavimai, kurie jau įgyvendinti.
+		}
+	\end{enumerate}
+	\begin{figure}[h!]
 		\includegraphics[scale=1]{img/eng1one}
 		\caption{PKP ENG1  proceso branda po pagerinimo} % Antraštė įterpiama po paveikslėlio
 		\label{img:pkpPries}
 	\end{figure}
-
-	\begin{figure}[!htbp]
+\newpage
+	\begin{figure}[h!]
 		\includegraphics[scale=1]{img/eng1two}
-		\caption{PKP brandra prieš pagerinimą} % Antraštė įterpiama po paveikslėlio
+		\caption{KP ENG1 proceso branda po pagerinimo} % Antraštė įterpiama po paveikslėlio
 		\label{img:pkpPries}
 	\end{figure}
-\subsubsection{Proceso aprašymas po pagerinimo}
-\begin{center}
-	\begin{table}[ht]
-		\caption{Reikalavimų ciklo procesas.}
-		\begin{tabular}{ | l | l | }
-			\hline
-			Pavadinimas:		& Reikalavimų ciklas.												\\ \hline
-			Tikslas:		& Suformuoti funkcinius ir nefunkcinius reikalavimus.								\\ \hline
-			Vykdytojai:		& Programuotojas, analistas, klientas.										\\ \hline
-			Veiklos:		& V1 - Iš kliento pateiktų verslo reikalavimų suformuojame funkcinius \\ & reikalavimus. 			\\
+	\newpage
 
-						& V2 - Pristatome klientui sudarytus funkcinius reikalavimus ir tiksliname \\& pateiktus verslo reikalavimus.	\\
-						& V3 - Siūlomi nefunkciniai reikalavimai.									\\ \hline
-			Naudojami produktai:	& NP1 - Kliento pateiktas verslo reikalavimų dokumentas.							\\ \hline
-			Sukuriami produktai:	& SP1 - Funkcinių ir nefunkcinių reikalavimų dokumentas.							\\ \hline
-						& SP2 - Susaistytų šalių parašai reikalavimam patvirtinti.							\\ \hline
-		\end{tabular}
-	\end{table}
-\end{center}
-
-\begin{enumerate}
-	\item{
-		Iš užsakovo ir naudotojų pateiktų verslo reikalavimų suformuojame funkcinius ir nefunkcinius reikalavimus.
-		Su visom partijom, įskaitant užsakovus ir naudotojus, susėdama, aptariami reikalavimai ir taip suderinami, kad visos susaistytos šalys būtų patenkintos.
-		Iš visų partijų surenkami parašai, tam kad vėliau nekiltų klausimų, kodėl reikalavimai neatitinka įsivaizdavimų.
-		Mūsų įmonės verslo analitikas dirbdamas kartu su programuotojais suformuoja atsekamus (su indentifikacijos kodu) funkcinius ir nefunkcinius reikalavimus.
-	}
-	\item{
-		Kompanija pateikia prieigą prie sistemos, su visu reikalavimų sąrašu, kur užsakovai gali stebėti jų įvykdymą.
-		Testuojant suprogramuotą funkcionalumą ir įgyvendinus reikalavimą, sistemoje pažymimas jog reikalavimas įgyvendintas.
-	}
-	\item{
-		Išsiaiškinami baziniai reikalavimai, kurie yra patys svarbiausi ir turi būti pirmi igyvendinti, baziniai reikalavimai yra atitinkamai pažymimi sistemoje.
-		Baziniai reikalavimai yra ypač atidžiai analizuojami analistų, analizėje taip pat įvertinama, kokia tikimybė, jog pasikeis reikalavimas ir atitinkamai suplanuojami veiksmai tokiu atveju.
-	}
-	\item{
-		Pristatome klientui sudarytus funkcinius reikalavimus ir tiksliname pateiktus verslo reikalavimus - suformavus funkcinius reikalavimus planuojami susitikimai su klientu, siekiant jam pristatyti suformuotus reikalavimus, patikslinti pateiktus verslo reikalavimus ir toliau tikslinti reikalavimus iki kol reikalavimai tenkins klientą ir bus suprantami programuotojų komandai, kuri dirbs prie kliento projekto.
-	}
-	\item{
-		Siūlomi nefunkciniai reikalavimai - jeigu klientas pats nepateikė nefunkcinių reikalavimų įmonė pati pateikia nefunkcinių reikalavimų siūlymus pagal esamo projekto apimtį ir biudžetą.
-		Pateikti nefunkciniai reikalavimai yra aptariami ir tikslinami su klientu.
-	}
-	\item{
-		Jeigu klientas reikalavimą pakeičia programavimo fazėje tai reikalavimas yra atidžiai peržiūrimas dar kartą, įvertinama, kiek kitokio funkcionalumo reikės pakeisti kuriamoj programų sistemoje, ir klientui pateikiama nauja sutartis, kurioje aprašoma, kokie darbai bus atlikti tam, kad jau suprogramuotoje sistemoje pakeistas reikalavimas būtų įgyvendintas.
-		Dar neįgyvendintų reikalavimų keitimas yra pigesnis (nes nereikia perprogramuoti nieko) ir klientui aiškiai išdėstoma kainos struktūra, kiek nauja sutartis kainuos, jeigu būs keičiami reikalavimai, kurie jau įgyvendinti.
-	}
-\end{enumerate}
 \section{Programinės įrangos testavimo (ENG 8) proceso pagerinimas}	
 	Kadangi labai svarbus klientų pasitikėjimas mūsų produkto kokybe, pasirinkome gerinti programinės įrangos testavimo procesą. Testuodami norime užtikrinti, kad perdavus klientui produktą neatsiras kalnas problemų ir jis veiks visose aplinkose, kuriose turi veikti.
 	\subsection{Pagerinimas}
