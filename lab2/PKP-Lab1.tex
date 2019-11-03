@@ -76,7 +76,9 @@
 	\end{center}
 
 	\begin{enumerate}
-		\item{Pirmas susitikimas, kuriame aptariamas galimas projektas, kiekviena pusė išsako savo lūkesčius, pasidalinama įdėjomis.}
+		\item{
+			Pirmas susitikimas, kuriame aptariamas galimas projektas, kiekviena pusė išsako savo lūkesčius, pasidalinama įdėjomis.
+		}
 		\item{
 			Po susitikimo įmonė paruošia pradininį pasiūlymą, į kurį įeina orientacinės finansų ribos, žmonių ištekliai, kurie galėtų būtų skiriami šiam projektui.
 			Šis pasiūlymas aptariamas su klientu, kartu su juo dokumentuojami funkcionalumai, kurių klientas nori pirmame sistemos išleidime.
@@ -133,16 +135,36 @@
 							& V3 - Siūlomi nefunkciniai reikalavimai.									\\ \hline
 				Naudojami produktai:	& NP1 - Kliento pateiktas verslo reikalavimų dokumentas.							\\ \hline
 				Sukuriami produktai:	& SP1 - Funkcinių ir nefunkcinių reikalavimų dokumentas.							\\ \hline
+							& SP2 - Susaistytų šalių parašai reikalavimam patvirtinti.							\\ \hline
 			\end{tabular}
 		\end{table}
 	\end{center}
 
 	\begin{enumerate}
-		\item{Iš kliento pateiktų verslo reikalavimų suformuojame funkcinius reikalavimus - mūsų įmonės verslo analitikas dirbdamas kartu su programuotojais suformuoja atsekamus (su indentifikacijos kodu) funkcinius reikalavimus.}
-		\item{Pristatome klientui sudarytus funkcinius reikalavimus ir tiksliname pateiktus verslo reikalavimus - suformavus funkcinius reikalavimus planuojami susitikimai su klientu, siekiant jam pristatyti suformuotus reikalavimus, patikslinti pateiktus verslo reikalavimus ir toliau tikslinti reikalavimus iki kol reikalavimai tenkis klientą ir bus suprantami programuotojų komandai, kuri dirbs prie kliento projekto.}
+		\item{
+			Iš užsakovo ir naudotojų pateiktų verslo reikalavimų suformuojame funkcinius ir nefunkcinius reikalavimus.
+			Su visom partijom, įskaitant užsakovus ir naudotojus, susėdama, aptariami reikalavimai ir taip suderinami, kad visos susaistytos šalys būtų patenkintos.
+			Iš visų partijų surenkami parašai, tam kad vėliau nekiltų klausimų, kodėl reikalavimai neatitinka įsivaizdavimų.
+			Mūsų įmonės verslo analitikas dirbdamas kartu su programuotojais suformuoja atsekamus (su indentifikacijos kodu) funkcinius ir nefunkcinius reikalavimus.
+		}
+		\item{
+			Kompanija pateikia prieeigą prie sistemos, su visu reikalavimų sąrašu, kur užsakovai gali stebėti jų įvykdymą.
+			Testuojant suprogramuotą funkcionalumą ir įgyvendinus reikalavimą, sistemoje pažymimas jog reikalavimas įgyvendintas.
+		}
+		\item{
+			Išsiaikšinami baziniai reikalavimai, kurie yra patys svarbiausi ir turi būti pirmi igyvendinti, baziniai reikalavimai yra atitinkamai pažymimi sistemoje.
+			Baziniai reikalavimai yra ypač atidžiai analizuojami analistų, analizėje taip pat įvertinama kokia tikimybė, jog pasikeis reikalavimas ir atitinkamai suplanuojami veiksmai tokiu atveju.
+		}
+		\item{
+			Pristatome klientui sudarytus funkcinius reikalavimus ir tiksliname pateiktus verslo reikalavimus - suformavus funkcinius reikalavimus planuojami susitikimai su klientu, siekiant jam pristatyti suformuotus reikalavimus, patikslinti pateiktus verslo reikalavimus ir toliau tikslinti reikalavimus iki kol reikalavimai tenkis klientą ir bus suprantami programuotojų komandai, kuri dirbs prie kliento projekto.
+		}
 		\item{
 			Siūlomi nefunkciniai reikalavimai - jeigu klientas pats nepateikė nefunkcinių reikalavimų įmonė pati pateikia nefunkcinių reikalavimų siūlymus pagal esamo projekto apimtį ir biudžetą.
 			Pateikti nefunkciniai reikalavimai yra aptariami ir tikslinami su klientu.
+		}
+		\item{
+			Jeigu klientas reikalavimą pakeičia programavimo fazėje tai reikalavimas yra atidžiai peržiūrimas dar kartą, įvertinamą kiek kitokio funkcionalumo reikės pakeisti kuriamoj programų sistemoje ir klientui pateikiama nauja sutartis, kurioje aprašomi kokie darbai bus atlitki tam kad jau suprogramuotoje sistemoje pakeistas reikalavimas būtų įgyvendintas.
+			Dar neigyvendintų reikalavimų keitimas yra pigesnis (nes nereikia perprogramuoti nieko) ir klientui aiškiai išdėstoma kainos struktūra, kiek nauja sutartis kainuos jeigu būs keičiami reikalavimai kurie jau įgyvendinti.
 		}
 	\end{enumerate}
 
@@ -199,6 +221,7 @@
 	\begin{enumerate}
 		\item{
 			Pradinis užduočių aptarimas su analistu arba užsakovo atstovu, šiame aptarime paaiškinami kiekvienos užduoties scenarijai iš dalykinės srities pusės, paaiškinami reikalavimai, kurie turi būti įgyvendinami prieš pabaigiant užduotį.
+			Pasitikslinama ar reikalavimai pasikeitė, jeigu jie pasikeitė, atitinkamai užduotys yra keičiamos.
 			Diskusijos su programuotojais metu galimi užduočių ar jų priėmimo kriterijų pakeitimai arba, jeigu jų negalima atlikti nepasitarus su klientu, užduotis yra atnaujinama vėliau, pasitarus su klientu.
 		}
 		\item{
@@ -206,7 +229,9 @@
 			Šioje diskusijoje programuotojai diskutuoja apie galimą kiekvienos užduoties implementaciją bei jos sudėtingumą, tada balsuojama dėl šiai užduočiai skiriamo balų skaičiaus.
 			Taip aptariamos visos dar neįvertintos užduodys, tuo atvėju, jeigu gilinantis į implementaciją atsiranda neaiškumų dėl dalykinės srities, užduotis yra blokuojama paliekant komentarą, kad jį radęs analistas galėtų patikslinti užduotį.
 		}
-		\item{Atlikus užduočių vertinimą analistas arba verslo atstovas sudeda sekančio sprinto struktūrą pagal galimą talpą (talpa lygi programuotojų skaičiui padauginta iš 8).}
+		\item{
+			Atlikus užduočių vertinimą analistas arba verslo atstovas sudeda sekančio sprinto struktūrą pagal galimą talpą (talpa lygi programuotojų skaičiui padauginta iš 8).
+		}
 	\end{enumerate}
 
 	\subsubsection{Užduočių analizė}
@@ -288,6 +313,7 @@
 	Įmonė vykdo vidinį priėmimo testavimą, kurį atlieka įmonėje dirbantys, tačiau teisiogiai su projektu, programavimu ar testavimu nesusiję darbuotojai: programuotojui atlikus užduotį analitikas atlieka priėmimo testus.
 	Tam tikrais atvejais naujai programos versijai gali būti vykdomas dūmų testas prieš kokybės užtikrinimo procesą.
 	Priėmimo testavimo procesą sudaro priėmimo testavimo planavimas, testų klasifikavimas bei priėmimo testavimas.
+	Praėjus testui, kuris patestuoja reikalavimų funkcionalumą, reikalavimų sistemoje reikalavimas pažymimas kaip įgyvendintas, užsakovas gali pasižiūrėti tiksliai kada ir kaip įgyvendintas reikalavimas.:w
 	\subsubsection{Kokybės užtikrinimas}
 	\begin{center}
 		\begin{table}[ht]
@@ -390,8 +416,12 @@ Atlikus testavimus, jei vartotojo dokumentacija dar neparašyta vartotojo dokume
 		\end{table}
 	\end{center}
 	\begin{enumerate}
-		\item Gavus defektą programuotojas pagal pateiktus žingsnius pakartoją defektą (jeigu jo pakartoti nepavyksta, jis grąžinamas atgal), bei išanalizuoja to defekto priežastis bei galimą sprendimą.
-		\item Suradus sprendimą defektas yra pašalinamas, jeigu reikia papildomi automatiniai testai, kurie patikrina funkcionalumo atvejį, kuriame buvo gautas defektas.
+		\item{
+			Defekto aprašymas pateikiamias ir sulyginamas su reikalavimų dokumentu, nustatoma ar tikrai defektas yra validus.
+			Gavus defektą programuotojas pagal pateiktus žingsnius pakartoją defektą (jeigu jo pakartoti nepavyksta, jis grąžinamas atgal), bei išanalizuoja to defekto priežastis bei galimą sprendimą.}
+		\item{
+			Suradus sprendimą defektas yra pašalinamas, jeigu reikia papildomi automatiniai testai, kurie patikrina funkcionalumo atvejį, kuriame buvo gautas defektas.
+		}
 	\end{enumerate}
 
 	\subsection{Išleidimas}
