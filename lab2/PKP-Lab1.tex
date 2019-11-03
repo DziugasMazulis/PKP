@@ -288,7 +288,6 @@
 	Įmonė vykdo vidinį priėmimo testavimą, kurį atlieka įmonėje dirbantys, tačiau teisiogiai su projektu, programavimu ar testavimu nesusiję darbuotojai: programuotojui atlikus užduotį analitikas atlieka priėmimo testus.
 	Tam tikrais atvejais naujai programos versijai gali būti vykdomas dūmų testas prieš kokybės užtikrinimo procesą.
 	Priėmimo testavimo procesą sudaro priėmimo testavimo planavimas, testų klasifikavimas bei priėmimo testavimas.
-
 	\subsubsection{Kokybės užtikrinimas}
 	\begin{center}
 		\begin{table}[ht]
@@ -307,17 +306,19 @@
 							& NP2 - Testai regresiniam testavimui.					\\ \hline
 				Sukuriami produktai:	& SP1 - Nauji defektai.							\\
 							& SP2 - Testų rezultatų dokumentas.					\\
-							& SP3 - Papildytas naujais defektais užduočių sąrašas.			\\ \hline
+							& SP3 - Papildytas naujais defektais užduočių sąrašas.			\\ 
+							& SP4 - Vartotojo dokumentacija. \\ \hline
 			\end{tabular}
 		\end{table}
 	\end{center}
 
 	Kokybės užtikrinimas skirtingas kiekvienam projektui.
-	Tuose projektuose, kuriuose kuriamoje sistemoje egzistuoja vartotojo sąsaja, atliekamas rankinis testavimas kartu su automatizuotu regresiniu testavimu.
+	Tuose projektuose, kuriuose kuriamoje sistemoje egzistuoja vartotojo sąsaja, atliekamas rankinis testavimas kartu su automatizuotu regresiniu testavimu. Kiekvienas testas apibrėžia pradinius duomenis ir tikrina rezultatus. Šie sudaryti testai turi padengti visus užduoties bei programinės įrangos reikalavimus ir užtikrinti, kad rezultatai atitinka užduoties aprašymą bei nesugriauna kitų programos dalių.
 	Į kokybės užtikrinimą yra įtraukiami ir programuotojai, kurie yra atsakingi už modulių testų rašymą ir klaidų taisymą.
 	Testuotojai atsakingi už rankinį testavimą, automatizuotų testų rašymą bei regresinių testų rezultatų apibendrinimą.
 	Jeigu projektas yra iteracinis ir jau išleistas plačiam naudojimui, po sėkmingo testavimo kodas yra sudedamas į aukštesnę aplinką, kurioje yra papildomai pravaliduojamas prieš jį išleidžiant į produkciją.
-	Jei testavimas parodė defektus - jie užregistruojami kaip užduotys ir jų taisymui, pagal jų sunkumą, skiriamas prioritetas.
+	Jei testavimas parodė defektus - jie užregistruojami kaip užduotys ir jų taisymui, pagal jų sunkumą, skiriamas prioritetas. 
+Atlikus testavimus, jei vartotojo dokumentacija dar neparašyta vartotojo dokumentacija, ji parašoma implementuotom užduotim, o jei jos nėra, ji atnaujinama.
 	\par
 	Ir programuotojai ir testuotojai atsakingi už tvarkingą ir kokybišką kodą ir sklandų programos veikimą.
 	Viena rečiau minima kokybės užtikrinimo dalis yra kodo peržiūra.
