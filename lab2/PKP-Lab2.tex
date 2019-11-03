@@ -42,7 +42,7 @@
 \sectionnonum{Įvadas}
 	Šiame dokumente aprašysime dabartinio ,,Mėnuliukų technologijos" įmonės programų kūrimo proceso pagerinimą. 
 	Dabar nei vienas iš aprašytų procesų nepasiekia pirmo lygio.
-	Šiuo darbu sieksime, kad po proceso pagerinimo trys procesai pasiektų pirmą PKP brando lygį.
+	Šiuo darbu sieksime, kad po proceso pagerinimo trys procesai pasiektų pirmą PKP brandos lygį.
 	\begin{figure}[htbp]
 		\includegraphics[scale=1]{img/ProcPries}
 		\caption{PKP brandra prieš pagerinimą} % Antraštė įterpiama po paveikslėlio
@@ -51,15 +51,32 @@
 
 \section{Reikalavimų išsiaiškinimo (ENG 1) proceso pagerinimas}
 \section{Programinės įrangos testavimo (ENG 8) proceso pagerinimas}	
+	Kadangi labai svarbus klientų pasitikėjimas mūsų produkto kokybe, pasirinkome gerinti programinės įrangos testavimo procesą. Testuodami norime užtikrinti, kad perdavus klientui produktą neatsiras kalnas problemų ir jis veiks visose aplinkose, kuriose turi veikti.
+	\subsection{Pagerinimas}
+	Buvo įvesti keli pagerinimai kokybės užtikrinimo skyriuje:
+	\begin{enumerate}
+						\item Prie sukuriamų produktų pridedama vartotojo dokumentacija.
+						\item Pridėtas pradinių duomenų apibrėžimas.
+						\item Paminėta, kad sudaryti testai padengia visus su testuojama užduotim susijusius reikalavimus.
+	\end{enumerate}
+	Pagrinde, ką reikėjo padaryti, kad pagerinti procesą, tai papildyti ir detaliau aprašyti dokumentaciją - testai tie patys: modulių, integraciniai, automatizuojami, regresiniai testai, bet aiškiau aprašyta, kokio rezultato po testavimo tikimasi.
+	
+	\subsection{NPLF atitikimas po pagerinimo}
+	\begin{figure}[htbp]
+		\includegraphics[scale=0.9]{img/eng8_po_pakeitimo}
+		\caption{PKP ENG8 proceso branda po pagerinimo} % Antraštė įterpiama po paveikslėlio
+		\label{img:pkpPries}
+	\end{figure}
+	
 \section{Kokybės užtikrinimo (SUP 1) proceso pagerinimas}
-	Pasirinkimo pagerinti kokybės užtikrinimo procesą, nes manome, kad siekiant išlaikyti esamus klientus ir pritraukti ateities klientus svarbiau yra užtikrinti, 
-	kad sukurtos programos būtų paprastos ir kokybiškos, negu su daug funkcionalumų tačiau prastai veikiančios.
+	Pasirinkome pagerinti kokybės užtikrinimo procesą, nes manome, kad siekiant išlaikyti esamus klientus ir pritraukti ateities klientus svarbiau yra užtikrinti, 
+	kad sukurtos programos būtų paprastos ir kokybiškos, negu su daug funkcionalumų, tačiau prastai veikiančios.
 
 			\subsection{Pagerinimas}
 				Įvedamos procesų gerinimo metrikos.
-				Pradėjus naują projektą kiekvieno proceso metu projektų vadomas žymisi kiek metrikas apie procesą.
+				Pradėjus naują projektą kiekvieno proceso metu projektų vadovas žymisi metrikas apie procesą.
 					\begin{enumerate}
-						\item{Proceso unikalus indikatorius(kiekvienam projektui skirtingas)}
+						\item{Proceso unikalus indikatorius (kiekvienam projektui skirtingas)}
 						\item{Kokia buvo numatyta proceso trukmė}
 						\item{Kiek laiko truko procesas}
 						\item{Ar visos numatytos šalys dalyvavo projekte}
@@ -67,10 +84,10 @@
 						\item{Proceso kaina}
 						\item{Atsiliepimai apie procesą}
 					\end{enumerate}
-				Pagal šia metrikas projekto pabaigoje, per projekto aptarimą yra vykdomas pačio proceso aptarimas ir, jeigu to reikia, gerinimas.
+				Pagal šias metrikas projekto pabaigoje, per projekto aptarimą, yra vykdomas pačio proceso aptarimas ir, jeigu to reikia, gerinimas.
 
-				Jeigu projekto vadomas mato, kad pačio projekto vykdymo metu būtinas proceso pakeitimas yra daromas susirinkimas su kompanijos savininkais ir suinteresuotais asmenimis siekiant spręsti šį klausimą. 
-				Jeigu reikia proceso modelio gerinimo procesas yra pradedamas ankščiau ir modelio pakeitimai yra įgyvendinami kaip galima greičiau.
+				Jeigu projekto vadovas mato, kad pačio projekto vykdymo metu būtinas proceso pakeitimas, yra daromas susirinkimas su kompanijos savininkais ir suinteresuotais asmenimis siekiant spręsti šį klausimą. 
+				Jeigu reikia, proceso modelio gerinimo procesas yra pradedamas anksčiau ir modelio pakeitimai yra įgyvendinami kaip galima greičiau.
 \pagebreak
 	\begin{center}
 		\begin{table}[ht]
@@ -79,8 +96,8 @@
 				\hline
 				Pavadinimas:		& Proceso gerinimas.						\\ \hline
 				Tikslas:		& Aptarti praėjusio projekto programų kūrimo procesą ir pagerinti jį.			\\ \hline
-				Vykdytojai:		& Įmonės darbuotojai dirbę prie projekto ir įmonės vadovybė.					\\ \hline
-				Veiklos:		& V1 - Aptarimas kiekvienas modelio procesas. 				\\
+				Vykdytojai:		& Įmonės darbuotojai, dirbę prie projekto, ir įmonės vadovybė.					\\ \hline
+				Veiklos:		& V1 - Aptariamas kiekvienas modelio procesas. 				\\
 							& V2 - Apžvelgiamos metrikos.	\\
 							& V3 - Surašomi gerinimo pasiūlymai.				\\ 
 							& V4 - Atliekama proceso gerinimo atsiperkamumo analizė \\ 
@@ -92,34 +109,34 @@
 	\end{center}
 
 	\begin{enumerate}
-		\item{Bendrais bruožais aptariamas kiekvienas modelio procesas, kokia komandos nuomonė kaip sekėsi sekti proceso nurodymais jų pačių akimis ir ar procesas jiems padėjo.}
+		\item{Bendrais bruožais aptariamas kiekvienas modelio procesas, kokia komandos nuomonė, kaip sekėsi sekti proceso nurodymus jų pačių akimis ir ar procesas jiems padėjo.}
 		\item{Apžvelgiamos metrikos ir kaip jos atsispindi tame, kas buvo kalbama pirmoje veikloje. 
-			Išsiaiškinama kodėl nebuvo sekta procesu, kodėl jis užtruko ilgiau arba trumpiau negu planuota ir kodėl buvo sunaudotą daugiau arba mažiau pinigų negu planuota.}
-		\item{Kiekvienas susirinkimo dalyvis anonimiškai surašo savo pasiūlymus kaip gerinti procesą.
-			Pasiūlymai peržiūrini susitinkimo dalyvių ir iškeliama diskusija trumpai aptariant visus nesidubliuojančius pasiūlymus.}
-		\item{Pagal atrinktus pasiūlymus ir vadovybės išskirtas proceso gerinimo tikslus įvertinamas kiek kiekviena gerinimo veikla kainuos implementuoti į modelį ir koks bus trumpalaikis ir ilgalaikis veikos atsiperkamumas}
-		\item{Atmetus nereikalingas tiklus sukuriamas naujas programų sistemos kūrimos proceso modelis, kuriuo bus vadovaujamasi kituose projektuose.}
+			Išsiaiškinama, kodėl nebuvo laikomasi proceso nurodymų, kodėl jis užtruko ilgiau arba trumpiau negu planuota, ir kodėl buvo sunaudota daugiau arba mažiau pinigų negu planuota.}
+		\item{Kiekvienas susirinkimo dalyvis anonimiškai surašo savo pasiūlymus, kaip gerinti procesą.
+			Pasiūlymai peržiūrimi susitikimo dalyvių ir iškeliama diskusija trumpai aptariant visus nesidubliuojančius pasiūlymus.}
+		\item{Pagal atrinktus pasiūlymus ir vadovybės išskirtus proceso gerinimo tikslus įvertinama, kiek kiekviena gerinimo veikla kainuos implementuoti į modelį ir koks bus trumpalaikis ir ilgalaikis veikos atsiperkamumas.}
+		\item{Atmetus nereikalingus tikslus sukuriamas naujas programų sistemos kūrimos proceso modelis, kuriuo bus vadovaujamasi kituose projektuose.}
 	\end{enumerate}
 
 	Pastaba: jeigu modeliui pasikeitus projektas vis dar vyksta ir pakeitimai nėra kritiniai, liekama prie senos modelio versijos siekiant negluminti užsakovo.	
 
 	\begin{figure}[htbp]
 		\includegraphics[scale=0.9]{img/sup1one}
-		\caption{PKP brandra prieš pagerinimą} % Antraštė įterpiama po paveikslėlio
+		\caption{PKP SUP1 proceso branda po pagerinimo} % Antraštė įterpiama po paveikslėlio
 		\label{img:pkpPries}
 	\end{figure}	
 
 	\begin{figure}[htbp]
 		\includegraphics[scale=0.9]{img/sup1two}
-		\caption{PKP brandra prieš pagerinimą} % Antraštė įterpiama po paveikslėlio
+		\caption{PKP SUP1 proceso branda po pagerinimo} % Antraštė įterpiama po paveikslėlio
 		\label{img:pkpPries}
 	\end{figure}	
 
-	\subsection{NPLF atitikimas pro pagerinimo}
+	\subsection{NPLF atitikimas po pagerinimo}
 
 	\begin{figure}[htbp]
 		\includegraphics[scale=0.9]{img/sup1three}
-		\caption{PKP brandra prieš pagerinimą} % Antraštė įterpiama po paveikslėlio
+		\caption{PKP SUP1 proceso branda po pagerinimo} % Antraštė įterpiama po paveikslėlio
 		\label{img:pkpPries}
 	\end{figure}	
 
