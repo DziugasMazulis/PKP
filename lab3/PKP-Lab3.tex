@@ -73,10 +73,70 @@
 		\caption{CMMI vertinimo rezultatų gebėjimo profilis prieš pagerinimą} % Antraštė įterpiama po paveikslėlio
 		\label{img:ProfilisPries}
 	\end{figure}
+	
+	
 	\section{Technical solution}
+	
+		Viena esminių produkto kūrimo procesų norint sukurti kokybišką produktą bei turėti sklandų jo kūrimo procesą yra technologinio sprendimo paieška ir įgyvendinimas, todėl ir nusprendėme patobulinti šį procesą. Jo aprašymui trūko detalumo bei praleisti svarbūs sprendimai, kuriuos reikia priimti prieš pradedant implementaciją.
 		\subsection{Pagerinimas}
+		\begin{itemize}
+			\item{Pridėtas visų projektavimo lygių išskyrimas ir jų dokumentacijos lygio nurodymas.}
+			\item{Pridėti kriterijai ir rodikliai visoms naudojamoms ir naujoms technoligijoms.}
+			\item{Nustatomi sąsajų kriterijai ir sąsajos tarp komponentų ir išorės.}
+			\item{Su klientu nutariama dėl alternatyvų.}
+			\item{Daroma produkto perpanaudojimo analizė ir nurodomi kriterijai.}
+			\item{Sukuriamas techninių duomenų paketas.}
+\end{itemize}
 			\subsubsection{Proceso aprašymas po pagerinimo}
+			\begin{center}
+		\begin{table}[ht]
+			\caption{Technologinio sprendimo paieškos ir įgyvendinimo procesas.}
+			\begin{tabular}{ | l | l | }
+				\hline
+				Pavadinimas:          & Technologinio sprendimo paieška ir įgyvendinimas.									\\ \hline
+				Tikslas:              & \textcolor{black}{Išskirti technologijas ir jų versijas, kurios bus naudojamos projekte. 	}					\\ \hline
+				Vykdytojai:           & \textcolor{black}{Projekto vadovas, klientas, programuotojas.}										\\ \hline
+				Veiklos:              & \textcolor{blue}{V1 - Nustatomi supruojaktuojami lygiai.} 								\\
+				& \textcolor{black}{V2 - Aptariamos technologijos, šiuo metu naudojamos projekte.} \\	
+				& \textcolor{blue}{V3 - Nustatomi technologijų kriterijai ir rodikliai.} \\			
+				& \textcolor{blue}{V4 - Nustatomi sąsajų kriterijai.} \\	
+				& \textcolor{blue}{V5 - Nustomos sąsajos tarp komponentų ir su išore.} \\	
+				& \textcolor{blue}{V6 - Pateikiamas palyginimas dabartinės sistemos ir kitų technologijų.} \\		
+				& \textcolor{blue}{V7 - Nustatomi produkto perpanaudojimo kriterijai.} \\							
+				                      & \textcolor{black}{V8 - Nustatomos technologijų kainos, kurios bus naudojamos projekte.}							\\
+				                      & \textcolor{black}{V9 - Nutariama dėl technologinių alternatyvų.	}									\\ 
+				                     
+				& \textcolor{blue}{V10 - Kuriamas techninių duomenų paketas.} \\		\hline
+				                      
+				Naudojami produktai:	& \textcolor{black}{NP1 - Esamos sistemos dokumentacija, norimų naudoti technologijų} \\& \textcolor{black}{dokumentacija ir kainynas. 	}		\\ \hline
+				Sukuriami produktai:	
+				& \textcolor{blue}{SP1 - Technologinių duomenų paketas.}	\\
+				& \textcolor{blue}{SP2 - Alternatyvių sprendimų dokumentas.}	\\\hline
+			\end{tabular}
+		\end{table}
+	\end{center}
+	\begin{enumerate}
+	\item{\textcolor{blue}{Nustatomas sistemos projektavimo lygių skaičius ir kiekvienam jų tinkamas dokumentacijos lygis.}}
+		\item{
+			Aptariamos technologijos, kurios šiuo metu naudojamos projekte - išskiriami technologiniai karkasai, duomenų bazės, programavimo kalbų versijos ir kitos naudojamos technologijos ir jų versijos.
+			Įvertinamas esamų technologijų saugumo lygis, greitaveika ir ateities palaikymas.
+			Pasiūlomi technologiniai sprendimai pagrindžiant jų naudą sistemai.
+		}
+		\item{\textcolor{blue}{Nustatomi kriterijai, kuriuos turi įgyvendinti potencialiai nauja technologija.}}
+		\item{Nustatomos technologijų kainos, kurios bus naudojamos projekte - paskaičiuojamos dabartinių technologijų kainos ir naujų siūlomų technologijų kainos.}
+		\item{\textcolor{blue}{Nustatomi naudojamų ir naujų technologinių alternatyvų visi rodikliai, kokie potencialūs privalumai ir neprivalumai.}}
+		\item{\textcolor{blue}{Nustatomi sąsajų kriterijai.}}
+		\item{\textcolor{blue}{Nustatomos sąsajos tarp produkto komponentų bei su išoriniais objektais.}}
+		\item{\textcolor{blue}{Pateikiamas palyginimai tarp dabartinės sistemos technologijos ir kitų technologijos kartu su anksčiau pateiktais kriterijais.}}
+		\item{\textcolor{blue}{Nutariama dėl technologinių alternatyvų su klientu atsižvelgiant į pateiktų kriterijų įgyvendinamumą ir kainą.}}
+		\item{\textcolor{blue}{Nustatomi produkto perpanaudojimo kriterijai.}}
+		\item{\textcolor{blue}{Suprojektuota sistema įvertinama pagal tai, ar produkto komponentai turėtų būti sukurti, perpanaudoti ar nusipirkti.}}
+		\item{\textcolor{blue}{Visi projektavimo sprendimai dokumentuojami techninių duomenų pakete.}}
+	\end{enumerate}
 		\subsection{NI PI LI FI atitikimas po pagerinimo}
+		
+		
+
 	\section{Verification}
 		Buvo nutarta, kad įmonėje vertifikaciją yra viena iš labiau išvystytų aspektų todėl norėjom jį dar labiau pastumti į priekį, kad ši sritis tarnautų dar ilgą laiką. 
 		Taip pat pamanėme, kad jeigu verifikacijos veikla įmonėje būtų išvystyta pilniau, būtų mažiau pataisymų, perdarimų ir konfliktų su užsakovų dėl produkto kuris neatitiktų reikalavimų.
